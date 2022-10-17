@@ -1,0 +1,35 @@
+@use "./variables";
+
+//limit size of images
+img {
+    max-width: 100%;
+    display: block;
+}
+
+//WRAPPER
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+// ANCHOR TAGS AS BUTTONS
+.button {
+    font-family: variables.$headingFont;
+    font-size: 1.35rem;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+    border: 2px solid transparent;
+    padding: 5px 25px;
+}
+
+//FOOTER
+footer {
+    text-align: center;
+    color: variables.$secondaryHeading;
+    background: variables.$logo;
+    p {
+        margin: 0;
+    }
+}

@@ -1,0 +1,64 @@
+@use "./variables";
+
+//base font size: 20px
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: variables.$bodyFont;
+    font-size: variables.$baseFontSize;
+    color: variables.$primaryBody;
+}
+
+h1, h2, h3, h4 {
+    font-family: variables.$headingFont;
+    font-weight: normal;
+    color: variables.$primaryHeading;
+    margin: 0;
+}
+
+h1 {
+    color: variables.$logo;
+    font-size: 1.5rem;
+    line-height: 24px;
+    letter-spacing: 1.7px;
+}
+
+h2 {
+    font-size: 2.9rem;
+    line-height: 68px;
+}
+
+h3 {
+    font-size: 2.15rem;
+    line-height: 58px;
+    letter-spacing: 2.7px;
+}
+
+h4 {
+    color: variables.$secondaryHeading;
+    font-size: 2rem;
+    line-height: 58px;
+    letter-spacing: 2.5px;
+}
+
+p {
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+ul, li, a, input {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}

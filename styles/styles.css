@@ -225,3 +225,96 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.button {
+  font-family: "Pacifico";
+  font-size: 1.35rem;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1.4px;
+  border: 2px solid transparent;
+  padding: 5px 25px;
+}
+
+footer {
+  text-align: center;
+  color: #FFFFFF;
+  background: #161515;
+}
+footer p {
+  margin: 0;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Lato";
+  font-size: 1rem;
+  color: #1E1713;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Pacifico";
+  font-weight: normal;
+  color: #1A315C;
+  margin: 0;
+}
+
+h1 {
+  color: #161515;
+  font-size: 1.5rem;
+  line-height: 24px;
+  letter-spacing: 1.7px;
+}
+
+h2 {
+  font-size: 2.9rem;
+  line-height: 68px;
+}
+
+h3 {
+  font-size: 2.15rem;
+  line-height: 58px;
+  letter-spacing: 2.7px;
+}
+
+h4 {
+  color: #FFFFFF;
+  font-size: 2rem;
+  line-height: 58px;
+  letter-spacing: 2.5px;
+}
+
+p {
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
+ul, li, a, input {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
