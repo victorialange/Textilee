@@ -318,3 +318,23 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
+.about {
+  background: #CCEDFB;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.about .flexAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about .flexAbout .textContainerAbout {
+  width: 70%;
+}
+.about .flexAbout .imgContainerAbout {
+  width: 30%;
+}
