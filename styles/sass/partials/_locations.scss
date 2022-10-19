@@ -1,0 +1,65 @@
+@use "./variables";
+
+.locations {
+    background: variables.$teal;
+    margin-bottom: 20px;
+    .onlineFlex {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        .imgContainerOnline {
+            width: 40%;
+            position: relative;
+            img {
+                width: 100%;
+                box-shadow: 28px 26px 0 0 variables.$turqoiseBlue;
+                position: absolute;
+                top: -35px;
+            }
+        }
+        .textContainerOnline {
+            width: 48%;
+            padding-left: 10px;
+            padding-right: 95px;
+            padding-top: 80px;
+        }
+    }
+    .newLocationsFlex {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 100px;
+        .textContainerNew {
+            width: 40%;
+            text-align: right;
+            padding-left: 40px;
+            padding-top: 30px;
+        }
+        .imgContainerNew {
+            width: 48%;
+            position: relative;
+            img {
+                width: 100%;
+                box-shadow: -28px 26px 0 0 variables.$turqoiseBlue;
+                position: absolute;
+                
+            }
+        }
+    }
+    .backgroundContainer {
+        height: 500px;
+        background-image: url('./../textilee-assets/banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    p {
+        color: variables.$white;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    .buttonTwo {
+        background: #b3b3c0;
+        border: none;
+    }
+}
+

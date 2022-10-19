@@ -243,17 +243,20 @@ img {
   text-align: center;
   line-height: 32px;
   letter-spacing: 1.4px;
-  border: 2px solid transparent;
-  padding: 5px 25px;
+  border: 2px solid black;
+  padding: 0 25px;
+  margin-bottom: 20px;
 }
 
 footer {
   text-align: center;
   color: #FFFFFF;
   background: #161515;
+  margin-top: 80px;
 }
 footer p {
   margin: 0;
+  padding: 5px;
 }
 
 html {
@@ -337,4 +340,79 @@ a {
 }
 .about .flexAbout .imgContainerAbout {
   width: 30%;
+}
+
+.locations {
+  background: #21404F;
+  margin-bottom: 20px;
+}
+.locations .onlineFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 80px;
+}
+.locations .onlineFlex .imgContainerOnline {
+  width: 40%;
+  position: relative;
+}
+.locations .onlineFlex .imgContainerOnline img {
+  width: 100%;
+  -webkit-box-shadow: 28px 26px 0 0 #0CADC0;
+          box-shadow: 28px 26px 0 0 #0CADC0;
+  position: absolute;
+  top: -35px;
+}
+.locations .onlineFlex .textContainerOnline {
+  width: 48%;
+  padding-left: 10px;
+  padding-right: 95px;
+  padding-top: 80px;
+}
+.locations .newLocationsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 100px;
+}
+.locations .newLocationsFlex .textContainerNew {
+  width: 40%;
+  text-align: right;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+.locations .newLocationsFlex .imgContainerNew {
+  width: 48%;
+  position: relative;
+}
+.locations .newLocationsFlex .imgContainerNew img {
+  width: 100%;
+  -webkit-box-shadow: -28px 26px 0 0 #0CADC0;
+          box-shadow: -28px 26px 0 0 #0CADC0;
+  position: absolute;
+}
+.locations .backgroundContainer {
+  height: 500px;
+  background-image: url("./../textilee-assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.locations p {
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.locations .buttonTwo {
+  background: #b3b3c0;
+  border: none;
+}
+
+.communication {
+  margin-bottom: 60px;
 }
