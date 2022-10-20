@@ -2,5 +2,34 @@
 
 .communication {
     background: variables.$lightSkyBlue;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.communication .fa-ul {
+    //padding-left: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.communication li {
+    width: 47%;
+}
+
+.communication .fa-li {
+    color: white;
+    background: variables.$turqoiseBlue;
+    font-size: 32px;
+    border-radius: 50%;
+    line-height: 60px;
+}
+
+.communication .textContainerList {
+    padding-left: 20px;
+    //width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
 }
