@@ -254,9 +254,9 @@ img {
 }
 
 .buttonTwo {
-  background: #b3b3c0;
+  background: #C6D9FB;
   color: #1E1713;
-  padding: 6px 32px;
+  padding: 8px 32px;
 }
 
 html {
@@ -555,8 +555,8 @@ header {
 
 .homeHeader {
   background: url("./../textilee-assets/header-home.jpg");
-  background-position-x: -10vw;
-  height: 800px;
+  background-position-x: -60px;
+  height: 750px;
 }
 
 .headingContainer {
@@ -577,7 +577,7 @@ header {
   height: -moz-min-content;
   height: min-content;
   position: absolute;
-  top: 95px;
+  top: 55px;
 }
 
 .headerNav {

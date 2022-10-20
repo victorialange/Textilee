@@ -10,8 +10,8 @@ header {
 .homeHeader {
     // BACKGROUND IMG
     background: url('./../textilee-assets/header-home.jpg');
-    background-position-x: -10vw;
-    height: 800px;
+    background-position-x: -60px;
+    height: 750px;
 }
 
 // CONTAINER for h2
@@ -29,6 +29,6 @@ header {
     img {
         height: min-content;
         position: absolute;
-        top: 95px;
+        top: 55px;
     }
 }
