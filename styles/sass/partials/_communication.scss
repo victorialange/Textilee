@@ -1,5 +1,6 @@
 @use "./variables";
 
 .communication {
-    margin-bottom: 60px;
+    background: variables.$lightSkyBlue;
+    padding-bottom: 60px;
 }

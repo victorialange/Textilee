@@ -3,16 +3,35 @@
 //ABOUT section
 .about {
     background: variables.$lightSkyBlue;
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: 200px;
+    padding-bottom: 90px;
     .flexAbout {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         .textContainerAbout {
-            width: 70%;
+            width: 58%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            p {
+                padding-bottom: 20px;
+            }
+            .button {
+                align-self: flex-start;
+                //padding-top: 12px;
+                //padding-bottom: 12px;
+                padding: 12px 32px;
+            }
         }
         .imgContainerAbout {
-            width: 30%;
+            width: 40%;
+            display: flex;
+            justify-content: right;
+            img {
+                height: min-content;
+                box-shadow: -26px 25px 0 -3px variables.$turqoiseBlue;
+            }
         }
     }
 }

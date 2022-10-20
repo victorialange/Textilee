@@ -20,9 +20,15 @@ img {
     text-align: center;
     line-height: 32px;
     letter-spacing: 1.4px;
-    border: 2px solid black;
     padding: 0 25px;
     margin-bottom: 20px;
+    background: variables.$darkSlateBlue;
+    color: variables.$white;
+}
+
+.buttonTwo {
+    background: #b3b3c0;
+    color: variables.$primaryBody;
 }
 
 //FOOTER
@@ -30,7 +36,7 @@ footer {
     text-align: center;
     color: variables.$white;
     background: variables.$blackLogo;
-    margin-top: 80px;
+
     p {
         margin: 0;
         padding: 5px;

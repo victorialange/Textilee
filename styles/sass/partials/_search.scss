@@ -1,0 +1,10 @@
+@use "./variables";
+
+.search {
+    background: variables.$lightSkyBlue;
+    text-align: center;
+    padding: 120px 0 150px 0;
+    p {
+        margin-bottom: 60px;
+    }
+}
