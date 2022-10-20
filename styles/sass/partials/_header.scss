@@ -1,0 +1,26 @@
+@use "./variables";
+
+header {
+    background: url('./../textilee-assets/header-home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -10vw;
+    height: 800px;
+    padding-top: 30px;
+}
+
+.headingContainer {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgContainerHeaderAbout {
+    width: 57%;
+    position: relative;
+    img {
+        height: min-content;
+        position: absolute;
+        top: 95px;
+    }
+}

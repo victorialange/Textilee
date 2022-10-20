@@ -1,0 +1,31 @@
+@use "./variables";
+
+nav {
+    font-weight: bold;
+    color: variables.$darkSlateBlue;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    line-height: 29px;
+}
+
+.headerFlex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    .headerNavFlex {
+        display: flex;
+        li {
+            margin-right: 75px;
+            
+        }
+        li:nth-child(4) {
+            margin-right: 0;
+        }
+        a:hover,
+        a:focus,
+        a:active {
+            border-bottom: 5px solid variables.$turqoiseBlue;
+            
+        }
+    } 
+}
