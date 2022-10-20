@@ -1,10 +1,21 @@
 @use "./variables";
 
+// SEARCH section
 .search {
     background: variables.$lightSkyBlue;
     text-align: center;
     padding: 120px 0 150px 0;
-    p {
+    // FLEX container
+    .searchFlex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        p {
         margin-bottom: 60px;
-    }
+        }
+        // a as BUTTON
+        .button {
+            align-self: center;
+        }
+    } 
 }

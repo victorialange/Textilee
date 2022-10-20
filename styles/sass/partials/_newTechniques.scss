@@ -1,14 +1,16 @@
 @use "./variables";
 
-//ABOUT section
+// ABOUT section
 .about {
     background: variables.$lightSkyBlue;
     padding-top: 190px;
     padding-bottom: 90px;
+    // FLEX container ABOUT
     .flexAbout {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        // TEXT CONTAINER ABOUT
         .textContainerAbout {
             width: 58%;
             display: flex;
@@ -17,20 +19,22 @@
             p {
                 padding-bottom: 20px;
             }
+            // a as BUTTON
             .button {
                 align-self: flex-start;
-                //padding-top: 12px;
-                //padding-bottom: 12px;
-                padding: 12px 32px;
             }
         }
+        // IMG container ABOUT
         .imgContainerAbout {
             width: 40%;
             display: flex;
             justify-content: right;
+            // IMG 
             img {
                 height: min-content;
+                // smallest height with min-content
                 box-shadow: -26px 25px 0 -3px variables.$turqoiseBlue;
+                // BOX SHADOW: horizontal offset - vertical offset - blur - spread - color
             }
         }
     }

@@ -1,0 +1,13 @@
+@use "./variables";
+
+//FOOTER
+footer {
+    text-align: center;
+    color: variables.$white;
+    background: variables.$blackLogo;
+    // strip PARAGRAPH of margin
+    p {
+        margin: 0;
+        padding: 5px;
+    }
+}

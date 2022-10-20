@@ -1,6 +1,9 @@
 @use "./variables";
 
+// HEADER
+
 header {
+    // BACKGROUND IMG
     background: url('./../textilee-assets/header-home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,15 +12,18 @@ header {
     padding-top: 30px;
 }
 
+// CONTAINER for h2
 .headingContainer {
     width: 45%;
     display: flex;
     flex-wrap: wrap;
 }
 
+// OVERLAPPING IMG between HEADER and ABOUT section inside main
 .imgContainerHeaderAbout {
     width: 57%;
     position: relative;
+    // IMG positioning
     img {
         height: min-content;
         position: absolute;

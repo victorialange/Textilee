@@ -1,22 +1,25 @@
 @use "./variables";
 
+// COMMUNICATION section
 .communication {
     background: variables.$lightSkyBlue;
     padding-bottom: 100px;
     padding-top: 100px;
 }
 
+// UL with FONT AWESOME icons instead of default bullets
 .communication .fa-ul {
-    //padding-left: 70px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+// li element default full width of page, limit to half
 .communication li {
     width: 47%;
 }
 
+// ICON custom styling
 .communication .fa-li {
     color: white;
     background: variables.$turqoiseBlue;
@@ -25,9 +28,9 @@
     line-height: 60px;
 }
 
+// TEXT container for h3 and p as list content
 .communication .textContainerList {
     padding-left: 20px;
-    //width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

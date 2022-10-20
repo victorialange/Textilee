@@ -1,5 +1,7 @@
 @use "./variables";
 
+// GENERAL STYLING
+
 //limit size of images
 img {
     max-width: 100%;
@@ -20,25 +22,14 @@ img {
     text-align: center;
     line-height: 32px;
     letter-spacing: 1.4px;
-    padding: 0 25px;
+    padding: 12px 32px;
     margin-bottom: 20px;
     background: variables.$darkSlateBlue;
     color: variables.$white;
 }
 
+// SECOND BUTTON STYLING
 .buttonTwo {
     background: #b3b3c0;
     color: variables.$primaryBody;
-}
-
-//FOOTER
-footer {
-    text-align: center;
-    color: variables.$white;
-    background: variables.$blackLogo;
-
-    p {
-        margin: 0;
-        padding: 5px;
-    }
 }

@@ -1,5 +1,6 @@
 @use "./variables";
 
+// HEADER NAV
 nav {
     font-weight: bold;
     color: variables.$darkSlateBlue;
@@ -8,24 +9,28 @@ nav {
     line-height: 29px;
 }
 
+// FLEX container for LOGO and NAV
 .headerFlex {
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
+    // UL as FLEX container for NAV
     .headerNavFlex {
         display: flex;
+        // right margin for all li elements
         li {
             margin-right: 75px;
             
         }
+        // no margin for last li element
         li:nth-child(4) {
             margin-right: 0;
         }
+        // turqoiseBlue underline for selected li item when hovering/tab
         a:hover,
         a:focus,
         a:active {
             border-bottom: 5px solid variables.$turqoiseBlue;
-            
         }
     } 
 }

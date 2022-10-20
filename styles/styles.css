@@ -243,7 +243,7 @@ img {
   text-align: center;
   line-height: 32px;
   letter-spacing: 1.4px;
-  padding: 0 25px;
+  padding: 12px 32px;
   margin-bottom: 20px;
   background: #1A315C;
   color: #FFFFFF;
@@ -252,16 +252,6 @@ img {
 .buttonTwo {
   background: #b3b3c0;
   color: #1E1713;
-}
-
-footer {
-  text-align: center;
-  color: #FFFFFF;
-  background: #161515;
-}
-footer p {
-  margin: 0;
-  padding: 5px;
 }
 
 html {
@@ -359,7 +349,6 @@ a {
 .about .flexAbout .textContainerAbout .button {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  padding: 12px 32px;
 }
 .about .flexAbout .imgContainerAbout {
   width: 40%;
@@ -406,6 +395,19 @@ a {
   padding-left: 10px;
   padding-right: 95px;
   padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.locations .onlineFlex .textContainerOnline .button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 .locations .newLocationsFlex {
   display: -webkit-box;
@@ -421,6 +423,19 @@ a {
   text-align: right;
   padding-left: 40px;
   padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.locations .newLocationsFlex .textContainerNew .button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .locations .newLocationsFlex .imgContainerNew {
   width: 48%;
@@ -440,12 +455,8 @@ a {
 }
 .locations p {
   color: #FFFFFF;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   margin-top: 10px;
-}
-.locations .buttonTwo {
-  background: #b3b3c0;
-  border: none;
 }
 
 .communication {
@@ -496,8 +507,23 @@ a {
   text-align: center;
   padding: 120px 0 150px 0;
 }
-.search p {
+.search .searchFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.search .searchFlex p {
   margin-bottom: 60px;
+}
+.search .searchFlex .button {
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .gallery {
@@ -578,4 +604,14 @@ nav {
 .headerFlex .headerNavFlex a:focus,
 .headerFlex .headerNavFlex a:active {
   border-bottom: 5px solid #0CADC0;
+}
+
+footer {
+  text-align: center;
+  color: #FFFFFF;
+  background: #161515;
+}
+footer p {
+  margin: 0;
+  padding: 5px;
 }
