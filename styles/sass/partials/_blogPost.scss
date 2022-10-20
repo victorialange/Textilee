@@ -1,0 +1,35 @@
+@use "./variables";
+
+// BLOG POST
+.blogPost {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 140px;
+    .blogPostArticle {
+        width: 58%;
+        background: variables.$teal;
+        color: variables.$white;
+        box-shadow: 7px 6px 0 6px variables.$turqoiseBlue;
+        h3 {
+            color: variables.$white;
+            padding-top: 120px;
+        }
+    }
+}
+
+aside {
+    width: 30%;
+    background: variables.$teal;
+    color: variables.$white;
+    height: 900px;
+    .sideNav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        ul {
+            list-style: disc;
+        }
+    }
+
+}

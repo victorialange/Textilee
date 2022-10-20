@@ -2,6 +2,10 @@
 
 // GENERAL STYLING
 
+body {
+    background: variables.$lightSkyBlue;
+}
+
 //limit size of images
 img {
     max-width: 100%;

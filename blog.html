@@ -4,9 +4,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Textilee - Blog</title>
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- link to Google Fonts Pacifico regular and Lato bold and regular -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- HEADER -->
+    <header class="blogHeader">
+        <!-- WRAPPER -->
+        <div class="wrapper">
+            <!-- FLEX CONTAINER for LOGO + HEADER NAV -->
+            <div class="headerFlex">
+                <!-- LOGO -->
+                <div class="logo">
+                    <!-- logo links to homepage -->
+                    <a href="./index.html">
+                        <h1>Textilee</h1>
+                    </a>
+                </div><!-- END LOGO -->
+                <!-- HEADER NAV -->
+                <nav class="headerNav">
+                    <!-- UL as FLEX container for NAV -->
+                    <ul class="headerNavFlex">
+                        <!-- HOME -->
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <!-- ABOUT -->
+                        <li>
+                            <a href="./index.html#about">About</a>
+                        </li>
+                        <!-- BLOG -->
+                        <li>
+                            <a href="./blog.html">Blog</a>
+                        </li>
+                        <!-- CONTACT -->
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- END HEADERFLEX for LOGO and NAV -->
+            <!-- HEADING CONTAINER -->
+            <div class="headingContainer">
+                <h2>Blog</h2>
+            </div><!-- END HEADING CONTAINER -->
+        </div><!-- END WRAPPER -->
+        <!-- IMG CONTAINER overlapping HEADER and ABOUT section -->
+        <div class="imgContainerHeaderBlog">
+            <img src="./textilee-assets/blog-post-image.jpg" alt="light blue and light brown linen fabric stacked on top of each other">
+        </div><!-- END OVERLAPPING IMG CONTAINER -->
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- BLOG POST SECTION -->
+        <section class="blogPost">
+            <!-- BLOG POST -->
+            <article class="blogPostArticle">
+                <span class="articleHeader">
+                    <h3>Our new collection</h3>
+                    <p>
+                        <time datetime="2019-10-05">Monday, October 5th, 2019</time>
+                        by Saron
+                    </p>
+                </span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit maxime deleniti debitis, voluptatem quae ea nostrum maiores amet illo placeat expedita distinctio recusandae nihil molestias dolores. Laboriosam rerum atque odit. Maiores tempora reprehenderit tempore itaque possimus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, fugit nobis quam minus mollitia sit ea dolorem illo amet, itaque numquam? Odio nobis molestiae eveniet accusantium dolores dolorum facere, at iste architecto nulla ipsam nisi, deleniti animi repellendus laboriosam, ex illum qui quis dolore neque veniam assumenda!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, laborum dicta pariatur accusantium quisquam autem nisi perferendis nulla aliquam, eligendi dolor mollitia exercitationem unde! Itaque harum adipisci odit fugit quaerat corrupti! Incidunt culpa mollitia corrupti consequuntur ducimus hic quia est sint aliquam. Maiores, aliquid itaque fugiat ullam veniam quisquam dolor adipisci voluptates repellendus ut corrupti molestiae nihil rerum dignissimos inventore asperiores enim ab, repellat minus. Pariatur error dicta animi quae qui!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint in iure dolorum earum sunt sapiente cupiditate. Assumenda nostrum tempora fuga quia inventore.</p>
+            </article>
+            <aside>
+                <!-- IMG CONTAINER SIDEBAR -->
+                <div class="imgContainerAside">
+                    <img src="./textilee-assets/sidebar-image.jpg" alt="beige rolled up fabric">
+                </div><!-- END IMG CONTAINER SIDEBAR-->
+                <!-- TEXT CONTAINER SIDEBAR -->
+                <div class="textContainerAside">
+                    <h4>Our mission</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis tempora odio quidem.</p>
+                    <p>Find out more.</p>
+                </div><!-- END TEXT CONTAINER ASIDE -->
+                <!-- SIDENAV -->
+                <nav class="sideNav">
+                    <!-- SIDENAV HEADING -->
+                    <h4>Recent Posts</h4>
+                    <!-- UL as FLEX CONTAINER for SIDENAV  -->
+                    <ul class="sideNavFlex">
+                        <!-- list item 1 -->
+                        <li>
+                            <a href="#">Donec facilisis tortor ut</a>
+                        </li>
+                        <!-- list item 2 -->
+                        <li>
+                            <a href="#">Augue lacinia at viverra</a>
+                        </li>
+                        <!-- list item 3 -->
+                        <li>
+                            <a href="#">Semper sed sapiens metus</a>
+                        </li>
+                        <!-- list item 4 -->
+                        <li>
+                            <a href="#">Scelerisque nec pharetra</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </section>
+
+        <!-- COMMENT SECTION -->
+        <section class="comments">
+            <h4>Comments:</h4>
+            <!-- COMMENT 1 -->
+            <article>
+                <!-- IMG CONTAINER COMMENT 1 -->
+                <div class="imgContainerComment">
+                    <img src="./textilee-assets/comment-1.jpg" alt="profile photo of smiling female, with the name Louise">
+                </div><!-- END IMG CONTAINER COMMENT 1 -->
+                <span>
+                    <p>
+                        <time datetime="2019-12-09">Tuesday, December 9th, 2019</time>
+                        by Louise
+                    </p>
+                </span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, beatae. Quod earum enim reprehenderit vel provident reiciendis odio voluptas necessitatibus repellendus temporibus ducimus laudantium quae molestias laborum magnam nostrum, deserunt doloremque nemo..</p>
+            </article>
+            <!-- COMMENT 2 -->
+            <article>
+                <!-- IMG CONTAINER COMMENT 2 -->
+                <div class="imgContainerComment">
+                    <img src="./textilee-assets/comment-2.jpg" alt="profile photo of a male wearing an orange beanie, with the name JP">
+                </div><!-- END IMG CONTAINER COMMENT 2 -->
+                <span>
+                    <p>
+                        <time datetime="2019-12-10">Wednesday, December 10th, 2019</time>
+                        by JP
+                    </p>
+                </span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni harum nulla omnis veniam, maiores mollitia inventore error necessitatibus.</p>
+            </article>
+            <form action="">
+                <label for="userName">Name</label>
+                <input type="text" name="userName" id="userName">
+
+                <label for="userEmail">Email address</label>
+                <input type="email" name="userEmail" id="userEmail">
+
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                <button>post comment</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright ©️ 2019 Juno College</p>
+    </footer>
 </body>
 </html>

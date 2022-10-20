@@ -1,15 +1,17 @@
 @use "./variables";
 
 // HEADER
-
 header {
-    // BACKGROUND IMG
-    background: url('./../textilee-assets/header-home.jpg');
+    padding-top: 30px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.homeHeader {
+    // BACKGROUND IMG
+    background: url('./../textilee-assets/header-home.jpg');
     background-position-x: -10vw;
     height: 800px;
-    padding-top: 30px;
 }
 
 // CONTAINER for h2

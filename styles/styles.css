@@ -226,6 +226,10 @@ html {
   overflow: hidden;
 }
 
+body {
+  background: #CCEDFB;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -544,12 +548,15 @@ a {
 }
 
 header {
-  background: url("./../textilee-assets/header-home.jpg");
+  padding-top: 30px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.homeHeader {
+  background: url("./../textilee-assets/header-home.jpg");
   background-position-x: -10vw;
   height: 800px;
-  padding-top: 30px;
 }
 
 .headingContainer {
@@ -573,7 +580,7 @@ header {
   top: 95px;
 }
 
-nav {
+.headerNav {
   font-weight: bold;
   color: #1A315C;
   text-transform: uppercase;
@@ -615,4 +622,70 @@ footer {
 footer p {
   margin: 0;
   padding: 5px;
+}
+
+.blogHeader {
+  background: url("./../textilee-assets/blog-header.jpg");
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position-x: -70px;
+}
+
+.imgContainerHeaderBlog {
+  width: 57.5%;
+  position: relative;
+}
+.imgContainerHeaderBlog img {
+  position: absolute;
+  top: 100px;
+  -webkit-box-shadow: 20px 30px 0 0 #0CADC0;
+          box-shadow: 20px 30px 0 0 #0CADC0;
+}
+
+.blogPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 140px;
+}
+.blogPost .blogPostArticle {
+  width: 58%;
+  background: #21404F;
+  color: #FFFFFF;
+  -webkit-box-shadow: 7px 6px 0 6px #0CADC0;
+          box-shadow: 7px 6px 0 6px #0CADC0;
+}
+.blogPost .blogPostArticle h3 {
+  color: #FFFFFF;
+  padding-top: 120px;
+}
+
+aside {
+  width: 30%;
+  background: #21404F;
+  color: #FFFFFF;
+  height: 900px;
+}
+aside .sideNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+aside .sideNav ul {
+  list-style: disc;
+}
+
+.comments {
+  width: 60%;
 }
