@@ -252,6 +252,7 @@ img {
 .buttonTwo {
   background: #b3b3c0;
   color: #1E1713;
+  padding: 6px 32px;
 }
 
 html {
@@ -377,7 +378,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 80px;
 }
 .locations .onlineFlex .imgContainerOnline {
   width: 40%;
@@ -394,7 +394,7 @@ a {
   width: 48%;
   padding-left: 10px;
   padding-right: 95px;
-  padding-top: 80px;
+  padding-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,13 +416,13 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 .locations .newLocationsFlex .textContainerNew {
   width: 40%;
   text-align: right;
   padding-left: 40px;
-  padding-top: 30px;
+  padding-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,6 +446,7 @@ a {
   -webkit-box-shadow: -28px 26px 0 0 #0CADC0;
           box-shadow: -28px 26px 0 0 #0CADC0;
   position: absolute;
+  top: 75px;
 }
 .locations .backgroundContainer {
   height: 500px;
