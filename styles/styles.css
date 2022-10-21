@@ -443,6 +443,7 @@ label {
 .locations .onlineFlex .textContainerOnline .button {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  margin-bottom: 0;
 }
 .locations .newLocationsFlex {
   display: -webkit-box;
@@ -456,7 +457,7 @@ label {
   text-align: right;
   padding-left: 140px;
   padding-top: 85px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 .locations .newLocationsFlex .textContainerNew .button {
   -ms-flex-item-align: end;
@@ -470,7 +471,7 @@ label {
   -webkit-box-shadow: -28px 26px 0 0 #0CADC0;
           box-shadow: -28px 26px 0 0 #0CADC0;
   position: absolute;
-  top: 80px;
+  top: 90px;
 }
 .locations .textContainerLocations {
   display: -webkit-box;
