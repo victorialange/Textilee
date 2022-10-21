@@ -8,11 +8,11 @@
     //margin-top: -1000px;
     //padding-top: 0 or 140px;
     .blogPostArticle {
-        width: 58%;
+        width: 61%;
         background: variables.$teal;
         color: variables.$white;
         box-shadow: 7px 6px 0 6px variables.$turqoiseBlue;
-        padding: 340px 80px 80px 180px;
+        padding: 420px 70px 80px 140px;
         p {
             margin-bottom: 40px;
         }
@@ -20,11 +20,11 @@
 }
 
 aside {
-    width: 30%;
+    width: 24.5%;
     background: variables.$teal;
     color: variables.$white;
-    height: 960px;
-    padding: 0 0 20px 20px;
+    height: fit-content;
+    padding: 0 0 20px 30px;
     /*
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ aside {
         }
     }
     .textContainerAside {
-        padding-top: 500px;
+        padding-top: 400px;
         padding-right: 30px;
         /*
         background: variables.$teal;
@@ -66,6 +66,10 @@ aside {
         ul {
             list-style: disc;
             list-style-position: inside;
+            margin: 2px 0 0 10px;
+        }
+        li {
+            margin-bottom: 10px;
         }
     }
 

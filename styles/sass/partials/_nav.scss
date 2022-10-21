@@ -19,7 +19,7 @@
         display: flex;
         // right margin for all li elements
         li {
-            margin-right: 75px;
+            margin-right: 50px;
             
         }
         // no margin for last li element
@@ -29,7 +29,8 @@
         // turqoiseBlue underline for selected li item when hovering/tab
         a:hover,
         a:focus,
-        a:active {
+        a:active,
+        a:visited {
             border-bottom: 5px solid variables.$turqoiseBlue;
         }
     } 
