@@ -739,6 +739,13 @@ aside .textContainerAside {
   width: 30%;
   */
 }
+aside .textContainerAside h4 {
+  margin-bottom: 10px;
+}
+aside .textContainerAside p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 aside .sideNav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -749,6 +756,7 @@ aside .sideNav {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 50px;
 }
 aside .sideNav ul {
   list-style: disc;

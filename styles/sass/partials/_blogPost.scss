@@ -48,11 +48,19 @@ aside {
         background: variables.$teal;
         width: 30%;
         */
+        h4 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
     }
     .sideNav {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        margin-top: 50px;
         //width: 30%;
         ul {
             list-style: disc;
