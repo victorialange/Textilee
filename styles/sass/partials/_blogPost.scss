@@ -5,14 +5,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 140px;
+    //margin-top: -1000px;
+    //padding-top: 0 or 140px;
     .blogPostArticle {
         width: 58%;
         background: variables.$teal;
         color: variables.$white;
         box-shadow: 7px 6px 0 6px variables.$turqoiseBlue;
-        padding: 150px 70px 80px 100px;
-        
+        padding: 340px 80px 80px 180px;
+        p {
+            margin-bottom: 40px;
+        }
     }
 }
 
@@ -23,20 +26,34 @@ aside {
     height: 960px;
     padding-left: 20px;
     padding-bottom: 20px;
+    /*
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    */
     .imgContainerAside {
         position: relative;
+        // width: 30%;
         img {
-            position: absolute;
             width: 100%;
+            position: absolute;
+            top: -30px;
         }
     }
     .textContainerAside {
         padding-top: 500px;
+        /*
+        background: variables.$teal;
+        width: 30%;
+        */
     }
     .sideNav {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        //width: 30%;
         ul {
             list-style: disc;
             list-style-position: inside;

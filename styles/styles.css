@@ -694,7 +694,6 @@ footer p {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 140px;
 }
 .blogPost .blogPostArticle {
   width: 58%;
@@ -702,7 +701,10 @@ footer p {
   color: #FFFFFF;
   -webkit-box-shadow: 7px 6px 0 6px #0CADC0;
           box-shadow: 7px 6px 0 6px #0CADC0;
-  padding: 150px 70px 80px 100px;
+  padding: 340px 80px 80px 180px;
+}
+.blogPost .blogPostArticle p {
+  margin-bottom: 40px;
 }
 
 aside {
@@ -712,16 +714,28 @@ aside {
   height: 960px;
   padding-left: 20px;
   padding-bottom: 20px;
+  /*
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  */
 }
 aside .imgContainerAside {
   position: relative;
 }
 aside .imgContainerAside img {
-  position: absolute;
   width: 100%;
+  position: absolute;
+  top: -30px;
 }
 aside .textContainerAside {
   padding-top: 500px;
+  /*
+  background: variables.$teal;
+  width: 30%;
+  */
 }
 aside .sideNav {
   display: -webkit-box;
@@ -741,11 +755,11 @@ aside .sideNav ul {
 
 .comments {
   width: 58%;
-  padding: 40px 50px 100px 100px;
+  padding: 40px 50px 100px 180px;
 }
 
 .comment {
-  padding: 60px 20px 60px 0;
+  padding: 60px 30px 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
