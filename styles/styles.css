@@ -721,7 +721,7 @@ aside {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 0 0 20px 30px;
+  padding: 0 0 35px 22px;
   /*
   display: flex;
   flex-direction: column;
@@ -736,11 +736,11 @@ aside .imgContainerAside {
 aside .imgContainerAside img {
   width: 100%;
   position: absolute;
-  top: -30px;
+  top: -10px;
 }
 aside .textContainerAside {
-  padding-top: 400px;
-  padding-right: 30px;
+  padding-top: 440px;
+  padding-right: 25px;
   /*
   background: variables.$teal;
   width: 30%;
@@ -752,6 +752,7 @@ aside .textContainerAside h4 {
 aside .textContainerAside p {
   margin-bottom: 0;
   margin-top: 0;
+  line-height: 29px;
 }
 aside .sideNav {
   display: -webkit-box;
@@ -764,7 +765,7 @@ aside .sideNav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 50px;
-  padding-right: 30px;
+  padding-right: 25px;
 }
 aside .sideNav ul {
   list-style: disc;
