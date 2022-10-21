@@ -10,7 +10,7 @@
         // margin-bottom: 80px;
         // IMG container ONLINE
         .imgContainerOnline {
-            width: 40%;
+            //width: 40%;
             position: relative;
             // IMG positioning with box-shadow
             img {
@@ -22,13 +22,9 @@
         }
         // TEXT CONTAINER for ONLINE part
         .textContainerOnline {
-            width: 48%;
-            padding-left: 10px;
-            padding-right: 95px;
+            //width: 48%;
+            padding-right: 110px;
             padding-top: 60px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
             // a as BUTTON
             .button {
                 align-self: flex-start;
@@ -39,16 +35,12 @@
     .newLocationsFlex {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 60px;
         // TEXT CONTAINER for NEW LOCATIONS
         .textContainerNew {
-            width: 40%;
             text-align: right;
-            padding-left: 40px;
-            padding-top: 80px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
+            padding-left: 140px;
+            padding-top: 85px;
+            padding-bottom: 60px;
             // a as BUTTON
             .button {
                 align-self: flex-end;
@@ -56,17 +48,29 @@
         }
         // IMG CONTAINER for NEW LOCATIONS
         .imgContainerNew {
-            width: 48%;
+            //width: 48%;
             position: relative;
             // positioning of IMG and box-shadow
             img {
                 width: 100%;
                 box-shadow: -28px 26px 0 0 variables.$turqoiseBlue;
                 position: absolute;
-                top: 75px
+                top: 80px
             }
         }
     }
+
+    .textContainerLocations {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .imgContainerLocations,
+    .textContainerLocations {
+        width: calc((100% / 2) - 130px);
+    }
+
     // BACKGROUND IMG CONTAINER for transition between LOCATIONS and SEARCH section
     .backgroundContainer {
         height: 500px;

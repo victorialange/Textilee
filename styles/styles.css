@@ -236,7 +236,7 @@ img {
 }
 
 .wrapper {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   max-width: 1280px;
 }
@@ -427,7 +427,6 @@ label {
           justify-content: space-between;
 }
 .locations .onlineFlex .imgContainerOnline {
-  width: 40%;
   position: relative;
 }
 .locations .onlineFlex .imgContainerOnline img {
@@ -438,19 +437,8 @@ label {
   top: -35px;
 }
 .locations .onlineFlex .textContainerOnline {
-  width: 48%;
-  padding-left: 10px;
-  padding-right: 95px;
+  padding-right: 110px;
   padding-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .locations .onlineFlex .textContainerOnline .button {
   -ms-flex-item-align: start;
@@ -463,13 +451,28 @@ label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 60px;
 }
 .locations .newLocationsFlex .textContainerNew {
-  width: 40%;
   text-align: right;
-  padding-left: 40px;
-  padding-top: 80px;
+  padding-left: 140px;
+  padding-top: 85px;
+  padding-bottom: 60px;
+}
+.locations .newLocationsFlex .textContainerNew .button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.locations .newLocationsFlex .imgContainerNew {
+  position: relative;
+}
+.locations .newLocationsFlex .imgContainerNew img {
+  width: 100%;
+  -webkit-box-shadow: -28px 26px 0 0 #0CADC0;
+          box-shadow: -28px 26px 0 0 #0CADC0;
+  position: absolute;
+  top: 80px;
+}
+.locations .textContainerLocations {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,20 +483,9 @@ label {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.locations .newLocationsFlex .textContainerNew .button {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-.locations .newLocationsFlex .imgContainerNew {
-  width: 48%;
-  position: relative;
-}
-.locations .newLocationsFlex .imgContainerNew img {
-  width: 100%;
-  -webkit-box-shadow: -28px 26px 0 0 #0CADC0;
-          box-shadow: -28px 26px 0 0 #0CADC0;
-  position: absolute;
-  top: 75px;
+.locations .imgContainerLocations,
+.locations .textContainerLocations {
+  width: calc(50% - 130px);
 }
 .locations .backgroundContainer {
   height: 500px;
@@ -522,6 +514,7 @@ label {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: var(--fa-li-margin, 3em);
 }
 
 .communication li {
@@ -531,9 +524,11 @@ label {
 .communication .fa-li {
   color: white;
   background: #0CADC0;
-  font-size: 32px;
+  font-size: 36px;
   border-radius: 50%;
   line-height: 60px;
+  left: calc(var(--fa-li-width, 1.7em) * -1);
+  width: var(--fa-li-width, 1.7em);
 }
 
 .communication .textContainerList {
@@ -589,6 +584,12 @@ label {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.galleryFlex li {
+  width: calc(33.3333333333% - 20px);
+}
+.galleryFlex li:nth-child(2) {
+  margin: 0 10px;
+}
 
 header {
   padding-top: 30px;
@@ -603,7 +604,7 @@ header {
 }
 
 .headingContainer {
-  width: 45%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
