@@ -11,10 +11,8 @@
         background: variables.$teal;
         color: variables.$white;
         box-shadow: 7px 6px 0 6px variables.$turqoiseBlue;
-        h3 {
-            color: variables.$white;
-            padding-top: 120px;
-        }
+        padding: 150px 70px 80px 100px;
+        
     }
 }
 
@@ -22,13 +20,26 @@ aside {
     width: 30%;
     background: variables.$teal;
     color: variables.$white;
-    height: 900px;
+    height: 960px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    .imgContainerAside {
+        position: relative;
+        img {
+            position: absolute;
+            width: 100%;
+        }
+    }
+    .textContainerAside {
+        padding-top: 500px;
+    }
     .sideNav {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         ul {
             list-style: disc;
+            list-style-position: inside;
         }
     }
 

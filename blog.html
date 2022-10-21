@@ -50,7 +50,7 @@
                 </nav>
             </div><!-- END HEADERFLEX for LOGO and NAV -->
             <!-- HEADING CONTAINER -->
-            <div class="headingContainer">
+            <div class="headingContainer blog">
                 <h2>Blog</h2>
             </div><!-- END HEADING CONTAINER -->
         </div><!-- END WRAPPER -->
@@ -66,18 +66,19 @@
         <section class="blogPost">
             <!-- BLOG POST -->
             <article class="blogPostArticle">
-                <span class="articleHeader">
-                    <h3>Our new collection</h3>
-                    <p>
-                        <time datetime="2019-10-05">Monday, October 5th, 2019</time>
+                <h3>Our new collection</h3>
+                <!-- Author and date subheading -->
+                <h5>
+                    <time datetime="2019-10-05">Monday, October 5th, 2019</time>
                         by Saron
-                    </p>
-                </span>
+                </h5><!-- END AUTHOR and DATE -->
+                <!-- TEXT -->
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit maxime deleniti debitis, voluptatem quae ea nostrum maiores amet illo placeat expedita distinctio recusandae nihil molestias dolores. Laboriosam rerum atque odit. Maiores tempora reprehenderit tempore itaque possimus.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, fugit nobis quam minus mollitia sit ea dolorem illo amet, itaque numquam? Odio nobis molestiae eveniet accusantium dolores dolorum facere, at iste architecto nulla ipsam nisi, deleniti animi repellendus laboriosam, ex illum qui quis dolore neque veniam assumenda!</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, laborum dicta pariatur accusantium quisquam autem nisi perferendis nulla aliquam, eligendi dolor mollitia exercitationem unde! Itaque harum adipisci odit fugit quaerat corrupti! Incidunt culpa mollitia corrupti consequuntur ducimus hic quia est sint aliquam. Maiores, aliquid itaque fugiat ullam veniam quisquam dolor adipisci voluptates repellendus ut corrupti molestiae nihil rerum dignissimos inventore asperiores enim ab, repellat minus. Pariatur error dicta animi quae qui!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint in iure dolorum earum sunt sapiente cupiditate. Assumenda nostrum tempora fuga quia inventore.</p>
             </article>
+            <!-- SIDE BAR -->
             <aside>
                 <!-- IMG CONTAINER SIDEBAR -->
                 <div class="imgContainerAside">
@@ -95,6 +96,7 @@
                     <h4>Recent Posts</h4>
                     <!-- UL as FLEX CONTAINER for SIDENAV  -->
                     <ul class="sideNavFlex">
+                        
                         <!-- list item 1 -->
                         <li>
                             <a href="#">Donec facilisis tortor ut</a>
@@ -118,44 +120,55 @@
 
         <!-- COMMENT SECTION -->
         <section class="comments">
-            <h4>Comments:</h4>
+            <h3>Comments:</h3>
             <!-- COMMENT 1 -->
-            <article>
+            <article class="comment">
                 <!-- IMG CONTAINER COMMENT 1 -->
                 <div class="imgContainerComment">
                     <img src="./textilee-assets/comment-1.jpg" alt="profile photo of smiling female, with the name Louise">
                 </div><!-- END IMG CONTAINER COMMENT 1 -->
-                <span>
-                    <p>
-                        <time datetime="2019-12-09">Tuesday, December 9th, 2019</time>
+                <!-- TEXT CONTAINER COMMENT 1 -->
+                <div class="textContainerComment">
+                    <!-- heading comment author and date -->
+                    <h5>
+                        <time datetime="2019-12-09">Tuesday December 9th, 2019</time>
                         by Louise
-                    </p>
-                </span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, beatae. Quod earum enim reprehenderit vel provident reiciendis odio voluptas necessitatibus repellendus temporibus ducimus laudantium quae molestias laborum magnam nostrum, deserunt doloremque nemo..</p>
+                    </h5><!-- END HEADING AUTHOR and DATE -->
+                    <!-- TEXT -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, beatae. Quod earum enim reprehenderit vel provident reiciendis odio voluptas necessitatibus repellendus temporibus ducimus laudantium quae molestias laborum magnam nostrum, deserunt doloremque nemo..</p>
+                </div><!-- END TEXT CONTAINER COMMENT 1 -->
             </article>
             <!-- COMMENT 2 -->
-            <article>
+            <article class="comment">
                 <!-- IMG CONTAINER COMMENT 2 -->
                 <div class="imgContainerComment">
                     <img src="./textilee-assets/comment-2.jpg" alt="profile photo of a male wearing an orange beanie, with the name JP">
                 </div><!-- END IMG CONTAINER COMMENT 2 -->
-                <span>
-                    <p>
-                        <time datetime="2019-12-10">Wednesday, December 10th, 2019</time>
+                <!-- TEXT CONTAINER COMMENT 2 -->
+                <div class="textContainerComment">
+                    <!-- HEADING AUTHOR and DATE -->
+                    <h5>
+                        <time datetime="2019-12-10">Wednesday December 10th, 2019</time>
                         by JP
-                    </p>
-                </span>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni harum nulla omnis veniam, maiores mollitia inventore error necessitatibus.</p>
+                    </h5><!-- END HEADING AUTHOR and DATE -->
+                    <!-- TEXT -->
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni harum nulla omnis veniam, maiores mollitia inventore error necessitatibus.</p>
+                </div><!-- END TEXT CONTAINER COMMENT 2 -->
             </article>
-            <form action="">
-                <label for="userName">Name</label>
-                <input type="text" name="userName" id="userName">
-
-                <label for="userEmail">Email address</label>
-                <input type="email" name="userEmail" id="userEmail">
-
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-                <button>post comment</button>
+            <!-- FORM -->
+            <form action="" method="POST">
+                <!-- FORM FIELD CONTAINER -->
+                <div class="field">
+                    <label for="userName">Name</label>
+                    <input type="text" name="userName" id="userName">
+                </div><!-- END FORM FIELD CONTAINER -->
+                <!-- FORM FIELD CONTAINER -->
+                <div class="field">
+                    <label for="userEmail">Email address</label>
+                    <input type="email" name="userEmail" id="userEmail">
+                </div><!-- END FORM FIELD CONTAINER -->
+                <textarea name="comment" id="comment" placeholder="Comment"></textarea>
+                <button class="button buttonOne">post comment</button>
             </form>
         </section>
     </main>

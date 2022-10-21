@@ -65,3 +65,45 @@ a {
     transition: 0.3s;
 }
 
+nav {
+    font-size: 1rem;
+    letter-spacing: 1.4px;
+    line-height: 29px;
+}
+
+//Blog page
+.blogPost h3 {
+    color: variables.$white;
+}
+
+.comments h3 {
+    font-size: 2rem;
+    color: variables.$blackLogo;
+}
+
+.blogPost h5 {
+    color: variables.$lightSkyBlue;
+}
+
+aside h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    color: variables.$darkSlateBlue;
+    font-size: 1rem;
+    letter-spacing: 1.4px;
+    margin-top: 10px;
+    line-height: 29px;
+}
+
+.blog h2,
+.contact h2 {
+    font-size: 3.4rem;
+    line-height: 64px;
+}
+
+label {
+    letter-spacing: 1.4px;
+    line-height: 29px;
+}
