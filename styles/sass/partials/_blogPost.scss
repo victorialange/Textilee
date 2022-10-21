@@ -24,8 +24,7 @@ aside {
     background: variables.$teal;
     color: variables.$white;
     height: 960px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding: 0 0 20px 20px;
     /*
     display: flex;
     flex-direction: column;
@@ -44,6 +43,7 @@ aside {
     }
     .textContainerAside {
         padding-top: 500px;
+        padding-right: 30px;
         /*
         background: variables.$teal;
         width: 30%;
@@ -61,6 +61,7 @@ aside {
         flex-direction: column;
         flex-wrap: wrap;
         margin-top: 50px;
+        padding-right: 30px;
         //width: 30%;
         ul {
             list-style: disc;
