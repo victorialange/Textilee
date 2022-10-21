@@ -864,3 +864,6 @@ form button {
       align-self: center;
   width: 100%;
 }
+form button:hover, form button:focus, form button:active {
+  cursor: pointer;
+}
