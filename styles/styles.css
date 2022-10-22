@@ -260,6 +260,16 @@ img {
   padding: 8px 32px;
 }
 
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  z-index: 10;
+  background: #fff;
+  color: black;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
 html {
   font-size: 125%;
 }
@@ -385,6 +395,14 @@ label {
 .contactForm,
 .contactForm ::placeholder {
   color: #FFFFFF;
+}
+
+.socialMedia i {
+  color: #1A315C;
+}
+
+address {
+  font-style: inherit;
 }
 
 .about {
@@ -907,7 +925,7 @@ form button:hover, form button:focus, form button:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: right;
-  height: 600px;
+  height: 570px;
 }
 
 .contact {
@@ -919,8 +937,8 @@ form button:hover, form button:focus, form button:active {
   position: absolute;
   top: 150px;
   padding: 70px 50px 40px 50px;
-  -webkit-box-shadow: 28px 26px 0 0 #0CADC0;
-          box-shadow: 28px 26px 0 0 #0CADC0;
+  -webkit-box-shadow: 26px 30px 0 -3px #0CADC0;
+          box-shadow: 26px 30px 0 -3px #0CADC0;
 }
 .contactForm label {
   margin-left: 20px;
@@ -928,6 +946,9 @@ form button:hover, form button:focus, form button:active {
 .contactForm textarea,
 .contactForm button {
   margin-top: 20px;
+}
+.contactForm textarea {
+  height: 240px;
 }
 
 .contactFormContainer {
@@ -937,7 +958,7 @@ form button:hover, form button:focus, form button:active {
 }
 
 .contactInfo {
-  padding: 80px 0 150px 0;
+  padding: 120px 0 200px 0;
 }
 
 .contactFlex {
@@ -951,19 +972,6 @@ form button:hover, form button:focus, form button:active {
       flex-wrap: wrap;
 }
 
-.socialMedia {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 22%;
-}
-
 .address {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -974,8 +982,21 @@ form button:hover, form button:focus, form button:active {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 15px;
 }
-.address li:nth-child(1) {
+.address li:nth-child(2) {
   margin-bottom: 30px;
+}
+
+.socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 65%;
+  margin-bottom: 15px;
 }

@@ -40,3 +40,14 @@ img {
     padding: 8px 32px;
 }
 
+// SKIP LINK
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    z-index: 10;
+    background: #fff;
+    color: black;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+

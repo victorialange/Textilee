@@ -2,7 +2,7 @@
 
 //CONTACT INFO section
 .contactInfo {
-    padding: 80px 0 150px 0;
+    padding: 120px 0 200px 0;
 }
 
 .contactFlex {
@@ -11,21 +11,22 @@
     flex-wrap: wrap;
 }
 
-.socialMedia {
-    display: flex;
-    justify-content: space-evenly;
-    height: fit-content;
-    width: 22%;
-    //padding-right: 55px;
-}
 
 .address {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 15px;
     //width: fit-content
-    li:nth-child(1) {
+    li:nth-child(2) {
         margin-bottom: 30px;
     }
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    width: 65%;
+    margin-bottom: 15px;
+    //padding-right: 55px;
 }

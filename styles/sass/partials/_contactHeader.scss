@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
-    height: 600px;
+    height: 570px;
 }
 
 .contact {
@@ -19,13 +19,16 @@
     position: absolute;
     top: 150px;
     padding: 70px 50px 40px 50px;
-    box-shadow: 28px 26px 0 0 variables.$turqoiseBlue;
+    box-shadow: 26px 30px 0 -3px variables.$turqoiseBlue;
     label {
         margin-left: 20px;
     }
     textarea,
     button {
         margin-top: 20px;
+    }
+    textarea {
+        height: 240px;
     }
 }
 .contactFormContainer {
