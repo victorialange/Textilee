@@ -434,8 +434,8 @@ address {
 
 .about {
   background: #CCEDFB;
-  padding-top: 190px;
-  padding-bottom: 90px;
+  padding-top: 240px;
+  padding-bottom: 120px;
 }
 .about .flexAbout {
   display: -webkit-box;
@@ -448,7 +448,7 @@ address {
       flex-wrap: wrap;
 }
 .about .flexAbout .textContainerAbout {
-  width: 58%;
+  width: 61%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,7 +456,7 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 20px;
+  padding-top: 7.5px;
 }
 .about .flexAbout .textContainerAbout p {
   padding-bottom: 20px;
@@ -466,7 +466,7 @@ address {
       align-self: flex-start;
 }
 .about .flexAbout .imgContainerAbout {
-  width: 40%;
+  width: 39%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,11 +475,12 @@ address {
           justify-content: right;
 }
 .about .flexAbout .imgContainerAbout img {
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  -webkit-box-shadow: -26px 25px 0 -3px #0CADC0;
-          box-shadow: -26px 25px 0 -3px #0CADC0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-shadow: -23px 25px 0 -3px #0CADC0;
+          box-shadow: -23px 25px 0 -3px #0CADC0;
+  width: 63%;
 }
 
 .locations {
@@ -498,14 +499,14 @@ address {
 }
 .locations .onlineFlex .imgContainerOnline img {
   width: 100%;
-  -webkit-box-shadow: 28px 26px 0 0 #0CADC0;
-          box-shadow: 28px 26px 0 0 #0CADC0;
+  -webkit-box-shadow: 26px 26px 0 0 #0CADC0;
+          box-shadow: 26px 26px 0 0 #0CADC0;
   position: absolute;
-  top: -35px;
+  top: -40px;
 }
 .locations .onlineFlex .textContainerOnline {
-  padding-right: 110px;
-  padding-top: 60px;
+  padding-right: 100px;
+  padding-top: 100px;
 }
 .locations .onlineFlex .textContainerOnline .button {
   -ms-flex-item-align: start;
@@ -522,9 +523,9 @@ address {
 }
 .locations .newLocationsFlex .textContainerNew {
   text-align: right;
-  padding-left: 140px;
-  padding-top: 85px;
-  padding-bottom: 30px;
+  padding-left: 136px;
+  padding-top: 120px;
+  padding-bottom: 35px;
 }
 .locations .newLocationsFlex .textContainerNew .button {
   -ms-flex-item-align: end;
@@ -535,8 +536,8 @@ address {
 }
 .locations .newLocationsFlex .imgContainerNew img {
   width: 100%;
-  -webkit-box-shadow: -28px 26px 0 0 #0CADC0;
-          box-shadow: -28px 26px 0 0 #0CADC0;
+  -webkit-box-shadow: -30px 28px 0 -5px #0CADC0;
+          box-shadow: -30px 28px 0 -5px #0CADC0;
   position: absolute;
   top: 90px;
 }
@@ -553,7 +554,7 @@ address {
 }
 .locations .imgContainerLocations,
 .locations .textContainerLocations {
-  width: calc(50% - 130px);
+  width: calc(50% - 120px);
 }
 .locations .backgroundContainer {
   height: 500px;
@@ -563,7 +564,7 @@ address {
 }
 .locations p {
   color: #FFFFFF;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   margin-top: 10px;
 }
 
@@ -586,7 +587,7 @@ address {
 }
 
 .communication li {
-  width: calc(50% - 3em);
+  width: calc(50% - 2em);
 }
 
 .communication .fa-li {
@@ -639,7 +640,7 @@ address {
 
 .gallery {
   background: #21404F;
-  padding: 100px 0;
+  padding: 120px 0;
 }
 
 .galleryFlex {
@@ -653,10 +654,10 @@ address {
       flex-wrap: wrap;
 }
 .galleryFlex li {
-  width: calc(33.3333333333% - 20px);
+  width: calc(33.3333333333% - 30px);
 }
 .galleryFlex li:nth-child(2) {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 header {
@@ -667,7 +668,8 @@ header {
 
 .homeHeader {
   background: url("./../textilee-assets/header-home.jpg");
-  background-position-x: -60px;
+  background-position-x: center;
+  background-size: cover;
   height: 750px;
 }
 
@@ -681,7 +683,7 @@ header {
 }
 
 .imgContainerHeaderAbout {
-  width: 57%;
+  width: 58%;
   position: relative;
 }
 .imgContainerHeaderAbout img {
@@ -689,7 +691,8 @@ header {
   height: -moz-min-content;
   height: min-content;
   position: absolute;
-  top: 55px;
+  top: 63px;
+  width: 100%;
 }
 
 .headerNav {

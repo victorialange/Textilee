@@ -3,7 +3,7 @@
 // GALLERY section
 .gallery {
     background: variables.$teal;
-    padding: 100px 0;
+    padding: 120px 0;
 }
 // UL as FLEX container for IMG
 .galleryFlex {
@@ -11,9 +11,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     li {
-        width: calc((100% / 3) - 20px);
+        width: calc((100% / 3) - 30px);
     }
     li:nth-child(2) {
-        margin: 0 10px;
+        margin: 0 15px;
     }
 }

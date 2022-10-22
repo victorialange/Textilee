@@ -10,7 +10,8 @@ header {
 .homeHeader {
     // BACKGROUND IMG
     background: url('./../textilee-assets/header-home.jpg');
-    background-position-x: -60px;
+    background-position-x: center;
+    background-size: cover;
     height: 750px;
 }
 
@@ -23,12 +24,13 @@ header {
 
 // OVERLAPPING IMG between HEADER and ABOUT section inside main
 .imgContainerHeaderAbout {
-    width: 57%;
+    width: 58%;
     position: relative;
     // IMG positioning
     img {
         height: min-content;
         position: absolute;
-        top: 55px;
+        top: 63px;
+        width: 100%;
     }
 }
