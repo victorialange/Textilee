@@ -11,6 +11,30 @@
     flex-wrap: wrap;
 }
 
+//FORM
+.contactForm {
+    background: variables.$teal;
+    position: absolute;
+    top: -260px;
+    padding: 70px 50px 40px 50px;
+    box-shadow: 26px 30px 0 -3px variables.$turqoiseBlue;
+    label {
+        margin-left: 20px;
+    }
+    textarea,
+    button {
+        margin-top: 20px;
+    }
+    textarea {
+        height: 240px;
+    }
+}
+.contactFormContainer {
+    position: relative;
+    padding-left: 90px;
+    width: 64vw;
+}
+
 
 .address {
     display: flex;
