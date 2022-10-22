@@ -381,6 +381,18 @@ label {
   line-height: 29px;
 }
 
+textarea {
+  padding: 30px;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+
 .contactForm ::-webkit-input-placeholder {
   color: #FFFFFF;
 }
@@ -398,7 +410,9 @@ label {
 }
 
 .contactForm,
-.contactForm ::placeholder {
+.contactForm ::placeholder,
+.contactForm input,
+.contactForm textarea {
   color: #FFFFFF;
 }
 
