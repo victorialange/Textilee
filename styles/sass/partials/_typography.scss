@@ -65,7 +65,8 @@ a {
     transition: 0.3s;
 }
 
-nav {
+nav,
+.address {
     font-size: 1rem;
     letter-spacing: 1.4px;
     line-height: 29px;
@@ -106,4 +107,9 @@ h5 {
 label {
     letter-spacing: 1.4px;
     line-height: 29px;
+}
+
+.contactForm,
+.contactForm ::placeholder {
+    color: variables.$white;
 }

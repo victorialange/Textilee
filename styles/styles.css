@@ -323,7 +323,8 @@ a {
   transition: 0.3s;
 }
 
-nav {
+nav,
+.address {
   font-size: 1rem;
   letter-spacing: 1.4px;
   line-height: 29px;
@@ -363,6 +364,27 @@ h5 {
 label {
   letter-spacing: 1.4px;
   line-height: 29px;
+}
+
+.contactForm ::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.contactForm ::-moz-placeholder {
+  color: #FFFFFF;
+}
+
+.contactForm :-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.contactForm ::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.contactForm,
+.contactForm ::placeholder {
+  color: #FFFFFF;
 }
 
 .about {
@@ -878,4 +900,82 @@ form button {
 }
 form button:hover, form button:focus, form button:active {
   cursor: pointer;
+}
+
+.contactHeader {
+  background-image: url("./../textilee-assets/contact-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  height: 600px;
+}
+
+.contact {
+  padding-top: 50px;
+}
+
+.contactForm {
+  background: #21404F;
+  position: absolute;
+  top: 150px;
+  padding: 70px 50px 40px 50px;
+  -webkit-box-shadow: 28px 26px 0 0 #0CADC0;
+          box-shadow: 28px 26px 0 0 #0CADC0;
+}
+.contactForm label {
+  margin-left: 20px;
+}
+.contactForm textarea,
+.contactForm button {
+  margin-top: 20px;
+}
+
+.contactFormContainer {
+  position: relative;
+  padding-left: 90px;
+  width: 64vw;
+}
+
+.contactInfo {
+  padding: 80px 0 150px 0;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 22%;
+}
+
+.address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
+}
+.address li:nth-child(1) {
+  margin-bottom: 30px;
 }

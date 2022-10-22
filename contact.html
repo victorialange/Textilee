@@ -4,9 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact - Textilee</title>
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- link to Google Fonts Pacifico regular and Lato bold and regular -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- HEADER -->
+    <header class="contactHeader">
+        <!-- WRAPPER -->
+        <div class="wrapper">
+            <!-- FLEX CONTAINER for LOGO + HEADER NAV -->
+            <div class="headerFlex headerFlexContact">
+                <!-- LOGO -->
+                <div class="logo">
+                    <!-- logo links to homepage -->
+                    <a href="./index.html">
+                        <h1>Textilee</h1>
+                    </a>
+                </div><!-- END LOGO -->
+                <!-- HEADER NAV -->
+                <nav class="headerNav">
+                    <!-- UL as FLEX container for NAV -->
+                    <ul class="headerNavFlex">
+                        <!-- HOME -->
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <!-- ABOUT -->
+                        <li>
+                            <a href="./index.html#about">About</a>
+                        </li>
+                        <!-- BLOG -->
+                        <li>
+                            <a href="./blog.html">Blog</a>
+                        </li>
+                        <!-- CONTACT -->
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- END HEADERFLEX for LOGO and NAV -->
+            <!-- HEADING CONTAINER -->
+            <div class="headingContainer contact">
+                <h2>Get in touch</h2>
+            </div><!-- END HEADING CONTAINER -->
+        </div><!-- END WRAPPER -->
+        <!-- CONTACT FORM CONTAINER -->
+        <div class="contactFormContainer">
+            <!-- FORM -->
+            <form action="" method="POST" class="contactForm">
+                <!-- FORM FIELD CONTAINER -->
+                <div class="field">
+                    <label for="userName">Name</label>
+                    <input type="text" name="userName" id="userName" required>
+                </div><!-- END FORM FIELD CONTAINER -->
+                <!-- FORM FIELD CONTAINER -->
+                <div class="field">
+                    <label for="userEmail">Email address</label>
+                    <input type="email" name="userEmail" id="userEmail" required>
+                </div><!-- END FORM FIELD CONTAINER -->
+                <textarea name="message" id="message" placeholder="Message" required></textarea>
+                <button class="button buttonTwo">submit</button>
+            </form>
+        </div><!-- END CONTACT FORM CONTAINER -->
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- CONTACT INFO section -->
+        <section class="contactInfo">
+            <!-- WRAPPER -->
+            <div class="wrapper contactFlex">
+                <!-- UL for SOCIAL MEDIA icons -->
+                <ul class="socialMedia">
+                    <!-- FACEBOOK -->
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <!-- INSTAGRAM -->
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <!-- TWITTER -->
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <!-- WHATSAPP -->
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- UL for ADDRESS INFO -->
+                <ul class="address">
+                    <!-- EMAIL ADDRESS -->
+                    <li>info@email.com</li>
+                    <br>
+                    <!-- PHONE NUMBER -->
+                    <li>123 - 456 -7890</li>
+                    <!-- ADDRESS -->
+                    <li>123 Queen Street West,</li>
+                    <li>Unit 10</li>
+                    <li>Toronto, Ontario</li>
+                    <li>M5V2D5</li>
+                </ul>
+            </div><!-- END WRAPPER -->
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright ©️ 2019 Juno College</p>
+    </footer>
+
+    <!-- Font Awesome kit's code for icons -->
+    <script src="https://kit.fontawesome.com/89c2b5bd0d.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+@use "./variables";
+
+// CONTACT HEADER
+.contactHeader {
+    background-image: url('./../textilee-assets/contact-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    height: 600px;
+}
+
+.contact {
+    padding-top: 50px;
+}
+
+//FORM
+.contactForm {
+    background: variables.$teal;
+    position: absolute;
+    top: 150px;
+    padding: 70px 50px 40px 50px;
+    box-shadow: 28px 26px 0 0 variables.$turqoiseBlue;
+    label {
+        margin-left: 20px;
+    }
+    textarea,
+    button {
+        margin-top: 20px;
+    }
+}
+.contactFormContainer {
+    position: relative;
+    padding-left: 90px;
+    width: 64vw;
+}
