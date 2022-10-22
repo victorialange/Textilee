@@ -1,14 +1,25 @@
 @use "./variables";
 
-//CONTACT INFO section
+//CONTACT INFO section - FLEX container for FORM and ADDRESS UL
 .contactInfo {
-    padding: 140px 0 200px 0;
+    padding: 140px 0 0 0;
+    // FLEX container for form and info
+    display: flex;
+    flex-wrap: wrap;
+    // for contact container
+    justify-content: center;
 }
 
-.contactFlex {
-    display: flex;
+// CONTAINER for ADDRESS UL
+.addressContainer {
+    /*display: flex;
     justify-content: right;
     flex-wrap: wrap;
+    */
+    width: fit-content;
+    height: fit-content;
+    // for flex-wrap or phone size:
+    padding-bottom: 30px;
 }
 
 //FORM
@@ -30,23 +41,29 @@
         //padding: 30px;
     }
 }
+// CONTAINER for CONTACT FORM
 .contactFormContainer {
     position: relative;
-    padding-left: 90px;
-    width: 64vw;
+    padding-left: 5%;
+    width: 64%;
+    // makes container after that appear below this container (full defined height)
+    min-height: 450px;
 }
 
-
+// UL FLEX CONTAINER FOR ADDRESS INFO and ICONS
 .address {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     //width: fit-content
+
+    // extra bottom margin for email
     li:nth-child(2) {
         margin-bottom: 30px;
     }
 }
 
+// ICON BAR
 .socialMedia {
     display: flex;
     justify-content: space-between;

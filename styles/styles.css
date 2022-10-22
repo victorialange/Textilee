@@ -961,18 +961,29 @@ form button:hover, form button:focus, form button:active {
 }
 
 .contactInfo {
-  padding: 140px 0 200px 0;
-}
-
-.contactFlex {
+  padding: 140px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.addressContainer {
+  /*display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  */
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 30px;
 }
 
 .contactForm {
@@ -996,8 +1007,9 @@ form button:hover, form button:focus, form button:active {
 
 .contactFormContainer {
   position: relative;
-  padding-left: 90px;
-  width: 64vw;
+  padding-left: 5%;
+  width: 64%;
+  min-height: 450px;
 }
 
 .address {
