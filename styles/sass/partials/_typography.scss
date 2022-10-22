@@ -104,13 +104,19 @@ h5 {
     line-height: 64px;
 }
 
+// FORM
+
 label {
     letter-spacing: 1.4px;
     line-height: 29px;
 }
 
 textarea {
-    padding: 30px;
+    padding: 40px 30px 30px 30px;
+}
+
+input {
+    padding: 15px 5px;
 }
 
 input,

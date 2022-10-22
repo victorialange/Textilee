@@ -38,7 +38,7 @@ form {
     padding-top: 40px;
     .field {
         width: calc( (100% / 2) - 22px );
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     .field:nth-child(1) {
         margin-right: 44px;
@@ -71,6 +71,7 @@ form {
     button {
         //align-self: center;
         width: 100%;
+        margin-top: 15px;
         &:hover,
         &:focus,
         &:active {
