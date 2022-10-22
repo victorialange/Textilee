@@ -15,9 +15,9 @@
     margin-left: var(--fa-li-margin,3em);
 }
 
-// li element default full width of page, limit to half
+// li element default full width of page, limit to half plus margin
 .communication li {
-    width: 47%;
+    width: calc((100% / 2) - 3em);
 }
 
 // ICON custom styling

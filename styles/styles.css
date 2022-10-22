@@ -586,7 +586,7 @@ address {
 }
 
 .communication li {
-  width: 47%;
+  width: calc(50% - 3em);
 }
 
 .communication .fa-li {
