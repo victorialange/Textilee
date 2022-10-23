@@ -480,7 +480,6 @@ address {
   height: fit-content;
   -webkit-box-shadow: -23px 25px 0 -3px #0CADC0;
           box-shadow: -23px 25px 0 -3px #0CADC0;
-  width: 63%;
 }
 
 .locations {
@@ -494,21 +493,21 @@ address {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.locations .onlineFlex .imgContainerOnline {
+.locations .imgContainerOnline {
   position: relative;
 }
-.locations .onlineFlex .imgContainerOnline img {
+.locations .imgContainerOnline img {
   width: 100%;
   -webkit-box-shadow: 26px 26px 0 0 #0CADC0;
           box-shadow: 26px 26px 0 0 #0CADC0;
   position: absolute;
   top: -40px;
 }
-.locations .onlineFlex .textContainerOnline {
+.locations .textContainerOnline {
   padding-right: 100px;
   padding-top: 100px;
 }
-.locations .onlineFlex .textContainerOnline .button {
+.locations .textContainerOnline .button {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-bottom: 0;
@@ -521,20 +520,20 @@ address {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.locations .newLocationsFlex .textContainerNew {
+.locations .textContainerNew {
   text-align: right;
   padding-left: 136px;
   padding-top: 120px;
   padding-bottom: 35px;
 }
-.locations .newLocationsFlex .textContainerNew .button {
+.locations .textContainerNew .button {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-.locations .newLocationsFlex .imgContainerNew {
+.locations .imgContainerNew {
   position: relative;
 }
-.locations .newLocationsFlex .imgContainerNew img {
+.locations .imgContainerNew img {
   width: 100%;
   -webkit-box-shadow: -30px 28px 0 -5px #0CADC0;
           box-shadow: -30px 28px 0 -5px #0CADC0;
@@ -1042,4 +1041,216 @@ form button:hover, form button:focus, form button:active {
   height: fit-content;
   width: 65%;
   margin-bottom: 15px;
+}
+
+@media (max-width: 1500px) {
+  .locations .textContainerOnline {
+    padding-top: 93px;
+  }
+  .locations .textContainerNew {
+    padding-left: 125px;
+  }
+}
+@media (max-width: 1475px) {
+  .locations .textContainerOnline {
+    padding-right: 81px;
+    padding-top: 72px;
+  }
+  .locations .textContainerOnline h4 {
+    font-size: 39px;
+  }
+  .locations .imgContainerNew img {
+    top: 140px;
+  }
+}
+@media (max-width: 1415px) {
+  .locations .textContainerLocations,
+.locations .imgContainerLocations {
+    width: calc(50% - 110px);
+  }
+}
+@media (max-width: 1410px) {
+  header {
+    padding-top: 35px;
+  }
+  header .headingContainer {
+    width: 55%;
+  }
+  .locations .imgContainerLocations,
+.locations .textContainerLocations {
+    width: calc(50% - 95px);
+  }
+  .locations .textContainerOnline {
+    padding-top: 80px;
+  }
+  .locations .textContainerOnline h4 {
+    font-size: 39px;
+  }
+  .locations .imgContainerNew img {
+    top: 130px;
+  }
+  .locations .textContainerNew {
+    padding-top: 150px;
+    padding-left: 106px;
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 1365px) {
+  header .imgContainerHeaderAbout img {
+    top: 90px;
+  }
+  .locations .textContainerOnline h4 {
+    font-size: 38px;
+  }
+  .locations .textContainerLocations,
+.locations .imgContainerLocations {
+    width: calc(50% - 90px);
+  }
+  .locations .imgContainerNew img {
+    top: 150px;
+  }
+  .locations .textContainerNew {
+    padding-top: 170px;
+    padding-left: 88px;
+  }
+}
+@media (max-width: 1350px) {
+  .locations .textContainerLocations,
+.locations .imgContainerLocations {
+    width: calc(50% - 85px);
+  }
+}
+@media (max-width: 1340px) {
+  .locations .textContainerLocations,
+.locations .imgContainerLocations {
+    width: calc(50% - 80px);
+  }
+  .locations .textContainerNew {
+    padding-left: 58px;
+  }
+  .locations .textContainerOnline {
+    padding-top: 65px;
+    padding-right: 58px;
+  }
+}
+@media (max-width: 1285px) {
+  header .headingContainer {
+    width: 60%;
+  }
+  .locations .textContainerLocations,
+.locations .imgContainerLocations {
+    width: calc(50% - 75px);
+  }
+}
+@media (max-width: 1272px) {
+  .locations .imgContainerNew img {
+    top: 37%;
+  }
+}
+@media (max-width: 1180px) {
+  header .headingContainer {
+    width: 66%;
+  }
+  header .imgContainerHeaderAbout img {
+    top: 50px;
+  }
+  .homeHeader {
+    height: 650px;
+  }
+  .locations .textContainerLocations,
+.locations .imgContainerLocations {
+    width: calc(50% - 50px);
+  }
+  .locations .textContainerOnline {
+    padding-right: 43px;
+    padding-top: 63px;
+  }
+  .locations .textContainerNew {
+    padding-top: 40px;
+  }
+  .locations .imgContainerNew img {
+    top: 25%;
+  }
+  .locations .onlineFlex {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 1075px) {
+  header .headingContainer {
+    width: 72%;
+  }
+  header .imgContainerHeaderAbout img {
+    top: 100px;
+  }
+  .homeHeader {
+    height: 650px;
+  }
+  .headerFlex {
+    padding-bottom: 75px;
+  }
+  .about {
+    padding-top: 185px;
+    padding-bottom: 85px;
+  }
+  .about .flexAbout .textContainerAbout {
+    width: 54%;
+  }
+  .galleryFlex li {
+    width: calc(33.3333333333% - 15px);
+  }
+  .communication h3 {
+    font-size: 40px;
+  }
+  .locations .textContainerNew {
+    padding-left: 15px;
+  }
+  .locations .imgContainerNew img {
+    top: 33%;
+  }
+  .locations .backgroundContainer {
+    height: 400px;
+  }
+  .locations .textContainerLocations h4 {
+    font-size: 33px;
+  }
+  .search {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 1065px) {
+  .communication h3 {
+    font-size: 39px;
+  }
+  .communication .fa-li {
+    left: calc(var(--fa-li-width, 1.5em) * -1);
+  }
+  .locations .textContainerLocations h4 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1040px) {
+  .wrapper {
+    width: 85%;
+  }
+  .communication h3 {
+    font-size: 38px;
+  }
+  .locations .textContainerLocations h4 {
+    font-size: 31px;
+  }
+}
+@media (max-width: 1020px) {
+  .locations .textContainerLocations h4 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1010px) {
+  .communication h3 {
+    font-size: 37px;
+  }
+}
+@media (max-width: 984px) {
+  .locations .imgContainerNew img {
+    top: 45%;
+  }
 }

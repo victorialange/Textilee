@@ -8,66 +8,67 @@
         display: flex;
         justify-content: space-between;
         // margin-bottom: 80px;
-        // IMG container ONLINE
-        .imgContainerOnline {
-            //width: 40%;
-            position: relative;
-            // IMG positioning with box-shadow
-            img {
-                width: 100%;
-                box-shadow: 26px 26px 0 0 variables.$turqoiseBlue;
-                position: absolute;
-                top: -40px;
-            }
-        }
-        // TEXT CONTAINER for ONLINE part
-        .textContainerOnline {
-            //width: 48%;
-            padding-right: 100px;
-            padding-top: 100px;
-            // a as BUTTON
-            .button {
-                align-self: flex-start;
-                margin-bottom: 0;
-            }
+    }
+    // IMG container ONLINE
+    .imgContainerOnline {
+        //width: 40%;
+        position: relative;
+        // IMG positioning with box-shadow
+        img {
+            width: 100%;
+            box-shadow: 26px 26px 0 0 variables.$turqoiseBlue;
+            position: absolute;
+            top: -40px;
         }
     }
+    // TEXT CONTAINER for ONLINE part
+    .textContainerOnline {
+        //width: 48%;
+        padding-right: 100px;
+        padding-top: 100px;
+        // a as BUTTON
+        .button {
+            align-self: flex-start;
+            margin-bottom: 0;
+        }
+    }
+    
     // FLEX container for NEW LOCATIONS part
     .newLocationsFlex {
         display: flex;
         justify-content: space-between;
-        // TEXT CONTAINER for NEW LOCATIONS
-        .textContainerNew {
-            text-align: right;
-            padding-left: 136px;
-            padding-top: 120px;
-            padding-bottom: 35px;
+    }
+    // TEXT CONTAINER for NEW LOCATIONS
+    .textContainerNew {
+        text-align: right;
+        padding-left: 136px;
+        padding-top: 120px;
+        padding-bottom: 35px;
 
-            // a as BUTTON
-            .button {
-                align-self: flex-end;
-            }
-        }
-        // IMG CONTAINER for NEW LOCATIONS
-        .imgContainerNew {
-            //width: 48%;
-            position: relative;
-            // positioning of IMG and box-shadow
-            img {
-                width: 100%;
-                box-shadow: -30px 28px 0 -5px variables.$turqoiseBlue;
-                position: absolute;
-                top: 90px
-            }
+        // a as BUTTON
+        .button {
+            align-self: flex-end;
         }
     }
-
+    // IMG CONTAINER for NEW LOCATIONS
+    .imgContainerNew {
+        //width: 48%;
+        position: relative;
+        // positioning of IMG and box-shadow
+        img {
+            width: 100%;
+            box-shadow: -30px 28px 0 -5px variables.$turqoiseBlue;
+            position: absolute;
+            top: 90px
+        }
+    }
+    // TEXT CONTAINER FOR BOTH parts
     .textContainerLocations {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-
+    // IMG AND TEXT CONTAINTERS
     .imgContainerLocations,
     .textContainerLocations {
         width: calc((100% / 2) - 120px);
