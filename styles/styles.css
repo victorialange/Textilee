@@ -1218,6 +1218,14 @@ aside .sideNav li {
   margin-bottom: 15px;
 }
 
+@media (max-width: 1710px) {
+  .imgContainerHeaderAbout {
+    width: 53%;
+  }
+  .imgContainerHeaderAbout img {
+    top: 65px;
+  }
+}
 @media (max-width: 1500px) {
   .locations .textContainerOnline {
     padding-top: 93px;
@@ -1566,14 +1574,6 @@ aside .sideNav li {
   }
 }
 @media (max-width: 925px) {
-  /*
-  .locations {
-      .imgContainerNew {
-          img {
-              top: 45%;
-          }
-      }
-  }*/
   .blogHeader {
     background-position-x: -300px;
   }
@@ -1655,7 +1655,6 @@ aside .sideNav li {
     padding-bottom: 50px;
   }
   aside {
-    position: sticky;
     left: 100%;
     width: 50%;
   }
@@ -1673,22 +1672,6 @@ aside .sideNav li {
     padding-right: 0;
   }
 }
-/*
-@media (max-width: 825px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2170px;
-    }
-}*/
-/*
-@media (max-width: 824px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2198px;
-    }
-}*/
 @media (max-width: 800px) {
   aside .imgContainerAside {
     height: 210px;
@@ -1698,38 +1681,7 @@ aside .sideNav li {
   .blogPost .blogPostArticle {
     padding-top: 350px;
   }
-  /*
-  aside {
-      top: 2149px;
-      .textContainerAside {
-          padding-top: 200px;
-      }
-  }*/
 }
-/*
-@media (max-width: 780px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2177px;
-    }
-}*/
-/*
-@media (max-width: 745px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2205px;
-      }
-}*/
-/*
-@media (max-width: 732px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2233px;
-      }
-}*/
 @media (max-width: 725px) {
   header .headingContainerHome h2 {
     font-size: 8vw;
@@ -1743,12 +1695,6 @@ aside .sideNav li {
   }
   .blogPost .blogPostArticle {
     padding-top: 330px;
-  }
-  aside {
-    /*top: 2213px;
-    .textContainerAside {
-        padding-top: 185px;
-    }*/
   }
   aside .imgContainerAside {
     height: 170px;
@@ -1769,22 +1715,6 @@ aside .sideNav li {
     margin-right: 0;
   }
 }
-/*
-@media (max-width: 724px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2241px;
-    }
-}*/
-/*
-@media (max-width: 721px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2269px;
-    }
-}*/
 @media (max-width: 690px) {
   header .imgContainerHeaderAbout img {
     top: 130px;
@@ -1796,14 +1726,6 @@ aside .sideNav li {
     height: 160px;
   }
 }
-/*
-@media (max-width: 688px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2322px;
-    }
-}*/
 @media (max-width: 650px) {
   header .imgContainerHeaderAbout {
     width: 62%;
@@ -1836,45 +1758,7 @@ aside .sideNav li {
   aside .imgContainerAside {
     height: 130px;
   }
-  /*
-  .comment {
-      flex-direction: column;
-      padding-top: 40px;
-  }
-  .textContainerComment {
-      margin-left: 0;
-  }*/
 }
-/*
-@media (max-width: 647px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2379px;
-    }
-}*/
-/*
-@media (max-width: 647px) {
-    aside {
-        top: 2350px;
-    }
-}*/
-@media (max-width: 644px) {
-  /*aside {
-      top: 2406px;
-      .textContainerAside {
-          padding-top: 160px;
-      }
-  }*/
-}
-/*
-@media (max-width: 637px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2434px;
-    }
-}*/
 @media (max-width: 629px) {
   .blogPost .blogPostArticle {
     width: 85%;
@@ -1882,34 +1766,7 @@ aside .sideNav li {
   .imgContainerHeaderBlog {
     width: 84.5%;
   }
-  /*aside {
-      top: 2322px;
-    }*/
 }
-/*
-@media (max-width: 608px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2350px;
-    }
-}*/
-/*
-@media (max-width: 607px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2378px;
-    }
-}*/
-/*
-@media (max-width: 605px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2406px;
-    }
-}*/
 @media (max-width: 600px) {
   .blogHeader {
     height: 500px;
@@ -1918,9 +1775,6 @@ aside .sideNav li {
   .imgContainerHeaderBlog img {
     top: 140px;
   }
-  /*aside {
-      top: 2385px;
-  }*/
 }
 @media (max-width: 592px) {
   .blogPost .blogPostArticle {
@@ -1929,29 +1783,7 @@ aside .sideNav li {
   .imgContainerHeaderBlog {
     width: 89.5%;
   }
-  /*aside {
-      top: 2273px;
-      .textContainerAside {
-          padding-top: 175px;
-      }
-  }*/
 }
-/*
-@media (max-width: 589px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2470px;
-    }
-}
-
-@media (max-width: 587px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2499px;
-      }
-}*/
 @media (max-width: 580px) {
   header .headingContainerHome h2 {
     font-size: 48px;
@@ -1993,30 +1825,6 @@ aside .sideNav li {
     height: 80px;
   }
 }
-/*
-@media (max-width: 575px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2198px;
-    }
-}
-
-@media (max-width: 572px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2226px;
-    }
-}
-
-@media (max-width: 567px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2254px;
-    }
-}*/
 @media (max-width: 560px) {
   .blogPost .blogPostArticle {
     padding-left: 50px;
@@ -2026,29 +1834,10 @@ aside .sideNav li {
     padding-left: 50px;
     padding-right: 50px;
   }
-  /*aside {
-      top: 2142px;
-  }*/
   .headerFlexContact {
     padding-bottom: 30px;
   }
 }
-/*
-@media (max-width: 525px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2170px;
-    }
-}
-
-@media (max-width: 523px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2226px;
-    }
-}*/
 @media (max-width: 519px) {
   .blogPost .blogPostArticle {
     width: 95%;
@@ -2100,27 +1889,6 @@ aside .sideNav li {
     top: 120px;
   }
 }
-/*
-@media (max-width: 497px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2170px;
-    }
-}
-
-@media (max-width: 496px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2198px;
-    }
-}
-
-@media (max-width: 494px) {
-    //BLOG PAGE
-    //SIDE BAR
-}*/
 @media (max-width: 481px) {
   .blogPost .blogPostArticle {
     width: 97%;
@@ -2283,11 +2051,6 @@ aside .sideNav li {
 .slideOutNav input:checked + label:after {
     right: -30px;
   }
-  header {
-    /*.imgContainerHeaderAbout {
-        width: 75%;
-    }*/
-  }
   header .headingContainerHome {
     width: 75%;
   }
@@ -2347,5 +2110,10 @@ aside .sideNav li {
   .slideOutNav label:after,
 .slideOutNav input:checked + label:after {
     right: -22.5px;
+  }
+  aside {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
   }
 }

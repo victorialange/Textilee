@@ -1,4 +1,15 @@
 @use "./variables";
+//styles for LARGE DESKTOP
+@media (max-width: 1710px) {
+    //HOME PAGE
+    // HEADER
+    .imgContainerHeaderAbout {
+        width: 53%;
+        img {
+            top: 65px;
+        }
+    }
+}
 
 //styles for medium desktop
 @media(max-width: 1500px) {
@@ -173,8 +184,6 @@
         }
     }
 }
-
-
 
 @media (max-width: 1285px) {
     //HOME PAGE
@@ -573,15 +582,6 @@
 
 //STYLES FOR TABLETS
 @media (max-width: 925px) {
-    //LOCATIONS section
-    /*
-    .locations {
-        .imgContainerNew {
-            img {
-                top: 45%;
-            }
-        }
-    }*/
     //BLOG PAGE
     //BLOG HEADER
     .blogHeader {
@@ -681,7 +681,6 @@
     }
     //SIDE BAR
     aside {
-        position: sticky;
         left: 100%;
         width: 50%;
         //IMG CONTAINER ASIDE
@@ -703,23 +702,6 @@
     }
 }
 
-/*
-@media (max-width: 825px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2170px;
-    }
-}*/
-
-/*
-@media (max-width: 824px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2198px;
-    }
-}*/
 
 @media (max-width: 800px) {
     //BLOG PAGE
@@ -739,41 +721,7 @@
             padding-top: 350px;
         }
     }
-    //SIDE BAR
-    /*
-    aside {
-        top: 2149px;
-        .textContainerAside {
-            padding-top: 200px;
-        }
-    }*/
 }
-
-/*
-@media (max-width: 780px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2177px;
-    }
-}*/
-
-/*
-@media (max-width: 745px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2205px;
-      }
-}*/
-/*
-@media (max-width: 732px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2233px;
-      }
-}*/
 
 @media (max-width: 725px) {
     //HOME PAGE
@@ -806,14 +754,11 @@
     }
     //SIDE BAR
     aside {
-        /*top: 2213px;
-        .textContainerAside {
-            padding-top: 185px;
-        }*/
         .imgContainerAside {
             height: 170px;
         }
     }
+    //BLOG FORM
     .blogForm {
         .field {
             width: 100%;
@@ -827,22 +772,6 @@
     }
 }
 
-/*
-@media (max-width: 724px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2241px;
-    }
-}*/
-/*
-@media (max-width: 721px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2269px;
-    }
-}*/
 
 @media (max-width: 690px) {
     //HOME PAGE
@@ -863,21 +792,11 @@
     }
     //SIDE BAR
     aside {
-        //width: min-content;
-        //top: 2294px;
         .imgContainerAside {
             height: 160px;
         }
     }
 }
-/*
-@media (max-width: 688px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2322px;
-    }
-}*/
 
 @media (max-width: 650px) {
     //HOME PAGE
@@ -930,50 +849,7 @@
             height: 130px;
         }
     }
-    //COMMENTS section
-    /*
-    .comment {
-        flex-direction: column;
-        padding-top: 40px;
-    }
-    .textContainerComment {
-        margin-left: 0;
-    }*/
 }
-
-/*
-@media (max-width: 647px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2379px;
-    }
-}*/
-/*
-@media (max-width: 647px) {
-    aside {
-        top: 2350px;
-    }
-}*/
-
-@media (max-width: 644px) {
-    //BLOG PAGE
-    //SIDE BAR
-    /*aside {
-        top: 2406px;
-        .textContainerAside {
-            padding-top: 160px;
-        }
-    }*/
-}
-/*
-@media (max-width: 637px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2434px;
-    }
-}*/
 
 @media (max-width: 629px) {
     //BLOG PAGE
@@ -987,35 +863,7 @@
     .imgContainerHeaderBlog {
         width: 84.5%;
     }
-    //SIDE BAR
-    /*aside {
-        top: 2322px;
-      }*/
 }
-/*
-@media (max-width: 608px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2350px;
-    }
-}*/
-/*
-@media (max-width: 607px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2378px;
-    }
-}*/
-/*
-@media (max-width: 605px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2406px;
-    }
-}*/
 
 @media (max-width: 600px) {
     //BLOG PAGE
@@ -1030,10 +878,6 @@
             top: 140px;
         }
     }
-    //SIDE BAR
-    /*aside {
-        top: 2385px;
-    }*/
 }
 
 @media (max-width: 592px) {
@@ -1048,30 +892,7 @@
     .imgContainerHeaderBlog {
         width: 89.5%;
     }
-    //SIDE BAR
-    /*aside {
-        top: 2273px;
-        .textContainerAside {
-            padding-top: 175px;
-        }
-    }*/
 }
-/*
-@media (max-width: 589px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2470px;
-    }
-}
-
-@media (max-width: 587px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2499px;
-      }
-}*/
 
 //STYLES FOR MOBILE DEVICES
 @media (max-width: 580px) {
@@ -1136,30 +957,6 @@
         }
     }
 }
-/*
-@media (max-width: 575px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2198px;
-    }
-}
-
-@media (max-width: 572px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2226px;
-    }
-}
-
-@media (max-width: 567px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2254px;
-    }
-}*/
 
 @media (max-width: 560px) {
     //BLOG PAGE
@@ -1175,10 +972,6 @@
         padding-left: 50px;
         padding-right: 50px;
     }
-    //SIDE BAR
-    /*aside {
-        top: 2142px;
-    }*/
 
     //CONTACT PAGE
     //CONTACT HEADER 
@@ -1191,22 +984,6 @@
     //BLOG PAGE
     
 }
-/*
-@media (max-width: 525px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2170px;
-    }
-}
-
-@media (max-width: 523px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2226px;
-    }
-}*/
 
 @media (max-width: 519px) {
     //BLOG PAGE
@@ -1225,7 +1002,6 @@
     }
     //SIDE BAR
     aside {
-        //top: 2142px;
         .imgContainerAside {
             height: 50px;
         }
@@ -1286,27 +1062,6 @@
         }
     }
 }
-/*
-@media (max-width: 497px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2170px;
-    }
-}
-
-@media (max-width: 496px) {
-    //BLOG PAGE
-    //SIDE BAR
-    aside {
-        top: 2198px;
-    }
-}
-
-@media (max-width: 494px) {
-    //BLOG PAGE
-    //SIDE BAR
-}*/
 
 @media (max-width: 481px) {
     //BLOG PAGE
@@ -1565,9 +1320,6 @@
         .headingContainerHome {
             width: 75%;
         }
-        /*.imgContainerHeaderAbout {
-            width: 75%;
-        }*/
     }
     .homeHeader {
         //height: 415px;
@@ -1648,5 +1400,10 @@
         input:checked + label:after {
             right: -22.5px;
         }
+    }
+    //BLOG PAGE
+    //SIDE BAR
+    aside {
+        width: min-content;
     }
 }
