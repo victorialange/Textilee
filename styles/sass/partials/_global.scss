@@ -113,3 +113,14 @@ form {
     }
     
 }
+
+//hide horizontal overflow
+.homeHeader,
+.onlineFlex,
+.contactHeader,
+.contactInfo,
+.blogPost,
+.comments,
+.blogHeader {
+    overflow-x: clip;
+}
