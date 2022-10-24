@@ -824,6 +824,84 @@ header {
   border-bottom: 5px solid #0CADC0;
 }
 
+.slideOutNav {
+  display: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1rem;
+  font-weight: bold;
+  color: inherit;
+  color: #1A315C;
+  background: #f5f5f5;
+  /* hide checkbox */
+  /* closing x when bars or checkbox checked, X icon FONT AWESOME */
+}
+.slideOutNav label {
+  font-size: 1.8rem;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  font-family: inherit;
+  text-transform: uppercase;
+  right: -90px;
+}
+.slideOutNav label:after {
+  content: "\f0c9";
+  /* text for character codes */
+  font-family: FontAwesome;
+  /*left:-5px;*/
+  right: -45px;
+  position: absolute;
+  /*top:0;*/
+}
+.slideOutNav input#menu {
+  display: none;
+}
+.slideOutNav input:checked + label:after {
+  content: "X";
+  font-family: FontAwesome;
+  /*left:-5px;*/
+  position: absolute;
+  /*top:0;*/
+  right: -45px;
+}
+
+.menuContent {
+  padding: 50px 0 0 60px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  max-height: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.menuContent ul {
+  padding: 0;
+}
+.menuContent a {
+  display: block;
+  padding: 10px;
+}
+
+input:checked ~ .menuContent {
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+}
+
+input:checked ~ .headerFlex {
+  padding-bottom: 0;
+}
+
+.blogNav {
+  background: #FFFFFF;
+}
+
+.contactNav {
+  background: transparent;
+}
+
 footer {
   text-align: center;
   color: #FFFFFF;
@@ -1269,6 +1347,14 @@ aside .sideNav li {
   }
 }
 @media (max-width: 1180px) {
+  .headerNav {
+    display: none;
+  }
+  .slideOutNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   header .headingContainerHome {
     width: 66%;
   }
@@ -2119,6 +2205,12 @@ aside .sideNav li {
   }
 }
 @media (max-width: 426px) {
+  .slideOutNav label {
+    font-size: 1.4rem;
+  }
+  .menuContent {
+    padding-left: 0;
+  }
   header .headingContainerHome {
     width: 61%;
   }
@@ -2159,6 +2251,13 @@ aside .sideNav li {
   }
 }
 @media (max-width: 375px) {
+  .slideOutNav label {
+    font-size: 1.3rem;
+  }
+  .slideOutNav label:after,
+.slideOutNav input:checked + label:after {
+    right: -35px;
+  }
   header .headingContainerHome {
     width: 70%;
   }
@@ -2177,6 +2276,13 @@ aside .sideNav li {
   }
 }
 @media (max-width: 351px) {
+  .slideOutNav label {
+    font-size: 1.2rem;
+  }
+  .slideOutNav label:after,
+.slideOutNav input:checked + label:after {
+    right: -30px;
+  }
   header {
     /*.imgContainerHeaderAbout {
         width: 75%;
@@ -2232,5 +2338,14 @@ aside .sideNav li {
   }
   aside .textContainerAside {
     padding-top: 170px;
+  }
+}
+@media (max-width: 338px) {
+  .slideOutNav label {
+    font-size: 1rem;
+  }
+  .slideOutNav label:after,
+.slideOutNav input:checked + label:after {
+    right: -22.5px;
   }
 }
