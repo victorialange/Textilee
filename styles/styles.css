@@ -902,6 +902,9 @@ aside {
   flex-wrap: wrap;
   justify-content: flex-start;
   */
+  position: sticky;
+  top: 200px;
+  right: 0;
 }
 aside .imgContainerAside {
   position: relative;
@@ -1156,6 +1159,12 @@ aside .sideNav li {
   .locations .imgContainerNew img {
     top: 140px;
   }
+  .blogPost .blogPostArticle {
+    padding-top: 390px;
+  }
+  aside .textContainerAside {
+    padding-top: 410px;
+  }
 }
 @media (max-width: 1415px) {
   .locations .textContainerLocations,
@@ -1187,6 +1196,12 @@ aside .sideNav li {
     padding-top: 150px;
     padding-left: 106px;
     padding-bottom: 25px;
+  }
+  .blogPost .blogPostArticle {
+    padding-top: 350px;
+  }
+  aside .textContainerAside {
+    padding-top: 380px;
   }
 }
 @media (max-width: 1365px) {
@@ -1241,6 +1256,14 @@ aside .sideNav li {
     top: 37%;
   }
 }
+@media (max-width: 1225px) {
+  .blogPost .blogPostArticle {
+    padding-top: 310px;
+  }
+  aside .textContainerAside {
+    padding-top: 340px;
+  }
+}
 @media (max-width: 1180px) {
   header .headingContainerHome {
     width: 66%;
@@ -1273,6 +1296,12 @@ aside .sideNav li {
   .communication h3 {
     font-size: 41px;
   }
+  .blogPost .blogPostArticle {
+    padding-top: 270px;
+  }
+  aside .textContainerAside {
+    padding-top: 310px;
+  }
 }
 @media (max-width: 1075px) {
   header .headingContainerHome {
@@ -1284,7 +1313,7 @@ aside .sideNav li {
   .homeHeader {
     height: 650px;
   }
-  .headerFlex {
+  .headerFlexHome {
     padding-bottom: 75px;
   }
   .about {
@@ -1314,6 +1343,15 @@ aside .sideNav li {
   }
   .search {
     padding-top: 100px;
+  }
+  .blogHeader {
+    height: 650px;
+  }
+  .blogPost .blogPostArticle {
+    padding-top: 280px;
+  }
+  aside .textContainerAside {
+    padding-top: 300px;
   }
 }
 @media (max-width: 1065px) {
@@ -1359,6 +1397,16 @@ aside .sideNav li {
   }
   form .field:nth-child(1) {
     margin-right: 0;
+  }
+  .blogPost .blogPostArticle {
+    padding-left: 85px;
+    padding-right: 50px;
+  }
+  .comments {
+    padding-left: 85px;
+  }
+  .comment {
+    padding-right: 30px;
   }
 }
 @media (max-width: 1020px) {

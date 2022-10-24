@@ -19,6 +19,7 @@
     }
 }
 
+// SIDE BAR
 aside {
     width: 24.5%;
     background: variables.$teal;
@@ -32,6 +33,9 @@ aside {
     flex-wrap: wrap;
     justify-content: flex-start;
     */
+    position: sticky;
+    top: 200px;
+    right: 0;
     .imgContainerAside {
         position: relative;
         // width: 30%;

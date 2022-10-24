@@ -2,7 +2,8 @@
 
 //styles for medium desktop
 @media(max-width: 1500px) {
-    //LOCATIONS
+    //HOME PAGE
+    //LOCATIONS section
     .locations {
         .textContainerOnline {
             padding-top: 93px;
@@ -14,6 +15,7 @@
 }
 
 @media (max-width: 1475px) {
+    //HOME PAGE
     // LOCATIONS section
     .locations {
         .textContainerOnline {
@@ -29,10 +31,24 @@
             }
         }
     }
+    //BLOG PAGE
+    //BLOG POST section
+    .blogPost {
+        .blogPostArticle {
+            padding-top: 390px;
+        }
+    }
+    //SIDE BAR
+    aside {
+        .textContainerAside {
+            padding-top: 410px;
+        }
+    }
 }
 
 @media (max-width: 1415px) {
-    //LOCATIONS
+    //HOME PAGE
+    //LOCATIONS section
     .locations {
         .textContainerLocations,
         .imgContainerLocations {
@@ -43,6 +59,7 @@
 
 
 @media (max-width: 1410px) {
+    //HOME PAGE
     // HEADER
     header {
         padding-top: 35px;
@@ -73,9 +90,23 @@
             padding-bottom: 25px;
         }
     }
+    //BLOG PAGE
+    //BLOG POST section
+    .blogPost {
+        .blogPostArticle {
+            padding-top: 350px;
+        }
+    }
+    //SIDE BAR
+    aside {
+        .textContainerAside {
+            padding-top: 380px;
+        }
+    }
 }
 
 @media (max-width: 1365px) {
+    //HOME PAGE
     //HEADER
     header {
         .imgContainerHeaderAbout {
@@ -105,9 +136,17 @@
             padding-left: 88px;
         }
     }
+    //BLOG PAGE
+    //BLOG HEADER
+    .imgContainerHeaderBlog {
+        img {
+            box-shadow: 33px 30px 0 -15px variables.$turquoiseBlue;
+        }
+    }
 }
 
 @media (max-width: 1350px) {
+    //HOME PAGE
     //LOCATIONS section
     .locations {
         .textContainerLocations,
@@ -118,6 +157,7 @@
 }
 
 @media (max-width: 1340px) {
+    //HOME PAGE
     // LOCATIONS section
     .locations {
         .textContainerLocations,
@@ -134,7 +174,10 @@
     }
 }
 
+
+
 @media (max-width: 1285px) {
+    //HOME PAGE
     //HEADER
     header {
         .headingContainerHome {
@@ -151,6 +194,7 @@
 }
 
 @media (max-width: 1272px) {
+    //HOME PAGE
     //LOCATIONS section
     .locations {
         .imgContainerNew {
@@ -161,7 +205,24 @@
     }
 }
 
+@media (max-width: 1225px) {
+    //BLOG PAGE
+    //BLOG POST section
+    .blogPost {
+        .blogPostArticle {
+            padding-top: 310px;
+        }
+    }
+    //SIDE BAR
+    aside {
+        .textContainerAside {
+            padding-top: 340px;
+        }
+    }
+}
+
 @media (max-width: 1180px) {
+    //HOME PAGE
     //HEADER
     header {
         .headingContainerHome {
@@ -202,15 +263,30 @@
 }
 
 @media (max-width: 1100px) {
+    //HOME PAGE
     //COMMUNICATION section
     .communication {
         h3 {
             font-size: 41px;
         }
     }
+    //BLOG PAGE
+    //BLOG POST section
+    .blogPost {
+        .blogPostArticle {
+            padding-top: 390px;
+        }
+    }
+    //SIDE BAR
+    aside {
+        .textContainerAside {
+            padding-top: 310px;
+        }
+    }
 }
 
 @media (max-width: 1075px) {
+    //HOME PAGE
     //HEADER
     header {
         .headingContainerHome {
@@ -225,7 +301,8 @@
     .homeHeader {
         height: 650px;
     }
-    .headerFlex {
+    //FLEX container NAV LOGO HOME
+    .headerFlexHome {
         padding-bottom: 75px;
     }
     //ABOUT section
@@ -249,7 +326,7 @@
         }
     }
 
-    //LOCATIONS
+    //LOCATIONS section
     .locations {
         .textContainerNew {
             padding-left: 15px;
@@ -272,6 +349,24 @@
     // SEARCH section
     .search {
         padding-top: 100px;
+    }
+    //BLOG PAGE
+    //BLOG HEADER
+    .blogHeader {
+        height: 550px;
+        background-position-x: -200px;
+    }
+    //BLOG POST section
+    .blogPost {
+        .blogPostArticle {
+            padding-top: 280px;
+        }
+    }
+    //SIDE BAR
+    aside {
+        .textContainerAside {
+            padding-top: 300px;
+        }
     }
 }
 
@@ -344,6 +439,22 @@
             margin-right: 0;
         }
     }
+    //BLOG PAGE
+    //BLOG POST section
+    .blogPost {
+        .blogPostArticle {
+            padding-left: 85px;
+            padding-right: 50px;
+        }
+    }
+    // COMMENTS section
+    .comments {
+        padding-left: 85px;
+    }
+    .comment {
+        padding-right: 30px;
+    }
+    
 }
 
 @media (max-width: 1020px) {
