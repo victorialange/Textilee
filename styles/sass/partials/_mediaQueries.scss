@@ -301,11 +301,12 @@
     }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1045px) {
     //WRAPPER
     .wrapper {
         width: 85%;
     }
+    //HOME PAGE
     //COMMUNICATION section
     .communication {
         h3 {
@@ -318,6 +319,29 @@
             h4 {
                 font-size: 31px;
             }
+        }
+    }
+    //CONTACT PAGE
+    //FORM
+    .contactFormContainer {
+        width: 80%;
+        padding-left: 0;
+        height: 550px;
+    }
+    //ADDRESS INFO
+    .addressContainer {
+        padding-bottom: 100px;
+    }
+    //CONTACT and BLOG FORM
+    form {
+        .field {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .field:nth-child(1) {
+            margin-right: 0;
         }
     }
 }
@@ -499,6 +523,7 @@
 }
 
 @media (max-width: 640px) {
+    //HOME PAGE
     //HEADER
     header {
         .imgContainerHeaderAbout {
@@ -531,6 +556,15 @@
         .backgroundContainer {
             height: 320px;
         }
+    }
+    //CONTACT PAGE
+    //CONTACT HEADER
+    .contactHeader {
+        height: 500px;
+    }
+    //FORM
+    .contactFormContainer {
+        width: 90%
     }
 }
 
@@ -721,15 +755,7 @@
         }
     }
     //CONTACT PAGE
-    //HEADER
-    header {
-        .headingContainer {
-            //makes heading stay in 1 line
-            h2 {
-                font-size: 16vw;
-            }
-        }
-    }
+    
 }
 
 @media (max-width: 375px) {

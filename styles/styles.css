@@ -1133,7 +1133,7 @@ aside .sideNav li {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 65%;
+  width: 158px;
   margin-bottom: 15px;
 }
 
@@ -1327,7 +1327,7 @@ aside .sideNav li {
     font-size: 32px;
   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 1045px) {
   .wrapper {
     width: 85%;
   }
@@ -1336,6 +1336,29 @@ aside .sideNav li {
   }
   .locations .textContainerLocations h4 {
     font-size: 31px;
+  }
+  .contactFormContainer {
+    width: 80%;
+    padding-left: 0;
+    height: 550px;
+  }
+  .addressContainer {
+    padding-bottom: 100px;
+  }
+  form .field {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  form .field:nth-child(1) {
+    margin-right: 0;
   }
 }
 @media (max-width: 1020px) {
@@ -1482,6 +1505,12 @@ aside .sideNav li {
   .locations .backgroundContainer {
     height: 320px;
   }
+  .contactHeader {
+    height: 500px;
+  }
+  .contactFormContainer {
+    width: 90%;
+  }
 }
 @media (max-width: 580px) {
   header .headingContainerHome h2 {
@@ -1612,9 +1641,6 @@ aside .sideNav li {
   }
   .locations .backgroundContainer {
     height: 250px;
-  }
-  header .headingContainer h2 {
-    font-size: 16vw;
   }
 }
 @media (max-width: 375px) {
