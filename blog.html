@@ -160,7 +160,7 @@
                 </div><!-- END TEXT CONTAINER COMMENT 2 -->
             </article>
             <!-- FORM -->
-            <form action="" method="POST">
+            <form action="" method="POST" class="blogForm" >
                 <!-- FORM FIELD CONTAINER -->
                 <div class="field">
                     <label for="userName">Name</label>
@@ -171,7 +171,10 @@
                     <label for="userEmail">Email address</label>
                     <input type="email" name="userEmail" id="userEmail" required>
                 </div><!-- END FORM FIELD CONTAINER -->
-                <textarea name="comment" id="comment" placeholder="Comment" required></textarea>
+                <div class="textAreaContainer">
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" id="comment" placeholder="Comment" required></textarea>
+                </div>
                 <button class="button buttonOne">post comment</button>
             </form>
         </section>

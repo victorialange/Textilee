@@ -32,9 +32,9 @@
     }
 }
 
-form {
-    display: flex;
-    flex-wrap: wrap;
+.blogForm {
+    /*display: flex;
+    flex-wrap: wrap;*/
     padding-top: 40px;
     .field {
         width: calc( (100% / 2) - 22px );
@@ -46,6 +46,7 @@ form {
     label {
         margin-left: 40px;
     }
+    /*
     input {
         display: block;
         width: 100%;
@@ -53,15 +54,15 @@ form {
         border: none;
         border-bottom: 3px solid variables.$turqoiseBlue;
         background: inherit;
-    }
+    }*/
     textarea {
-        width: 100%;
+        //width: 100%;
         height: 200px;
-        margin-bottom: 30px;
+        //margin-bottom: 30px;
         background: inherit;
         border: 3px solid variables.$turqoiseBlue;
-        
     }
+    /*
     ::placeholder {
             color: variables.$primaryBody;
             letter-spacing: 1.4px;
@@ -77,6 +78,6 @@ form {
         &:active {
             cursor: pointer;
         }
-    }
+    }*/
     
 }
