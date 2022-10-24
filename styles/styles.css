@@ -917,6 +917,7 @@ footer p {
   height: 700px;
   background-repeat: no-repeat;
   background-position-x: -70px;
+  background-size: cover;
 }
 
 .headerFlexBlog {
@@ -1218,6 +1219,37 @@ aside .sideNav li {
   margin-bottom: 15px;
 }
 
+@media (max-width: 1900px) {
+  .imgContainerHeaderAbout {
+    width: 48%;
+  }
+  .wrapper {
+    max-width: 1900px;
+  }
+  .headingContainerHome {
+    width: 40%;
+  }
+  .locations .imgContainerOnline img {
+    top: -95px;
+  }
+  aside .imgContainerAside img {
+    top: -100px;
+  }
+}
+@media (max-width: 1800px) {
+  .imgContainerHeaderAbout {
+    width: 50%;
+  }
+  .wrapper {
+    max-width: 1800px;
+  }
+  .headingContainerHome {
+    width: 43%;
+  }
+  aside .imgContainerAside img {
+    top: -70px;
+  }
+}
 @media (max-width: 1710px) {
   .imgContainerHeaderAbout {
     width: 53%;
@@ -1225,16 +1257,51 @@ aside .sideNav li {
   .imgContainerHeaderAbout img {
     top: 65px;
   }
+  .headingContainerHome {
+    width: 45%;
+  }
+  .locations .imgContainerOnline img {
+    top: -80px;
+  }
+  aside .imgContainerAside img {
+    top: -40px;
+  }
+}
+@media (max-width: 1600px) {
+  .headingContainerHome {
+    width: 48%;
+  }
+  .locations .imgContainerOnline img {
+    top: -40px;
+  }
+  aside .imgContainerAside img {
+    top: -15px;
+  }
 }
 @media (max-width: 1500px) {
+  .imgContainerHeaderAbout img {
+    top: 110px;
+  }
+  .headingContainerHome {
+    width: 51%;
+  }
   .locations .textContainerOnline {
     padding-top: 93px;
   }
   .locations .textContainerNew {
     padding-left: 125px;
   }
+  aside .imgContainerAside img {
+    top: -30px;
+  }
+  aside .textContainerAside {
+    padding-top: 380px;
+  }
 }
 @media (max-width: 1475px) {
+  .imgContainerHeaderAbout img {
+    top: 105px;
+  }
   .locations .textContainerOnline {
     padding-right: 81px;
     padding-top: 72px;
@@ -1262,7 +1329,7 @@ aside .sideNav li {
   header {
     padding-top: 35px;
   }
-  header .headingContainerHome {
+  .headingContainerHome {
     width: 55%;
   }
   .locations .imgContainerLocations,
@@ -1291,8 +1358,8 @@ aside .sideNav li {
   }
 }
 @media (max-width: 1365px) {
-  header .imgContainerHeaderAbout img {
-    top: 90px;
+  .imgContainerHeaderAbout img {
+    top: 135px;
   }
   .locations .textContainerOnline h4 {
     font-size: 38px;
@@ -1333,7 +1400,7 @@ aside .sideNav li {
   }
 }
 @media (max-width: 1285px) {
-  header .headingContainerHome {
+  .headingContainerHome {
     width: 60%;
   }
   .locations .textContainerLocations,
@@ -1347,6 +1414,9 @@ aside .sideNav li {
   }
 }
 @media (max-width: 1225px) {
+  .imgContainerHeaderAbout img {
+    top: 165px;
+  }
   .blogPost .blogPostArticle {
     padding-top: 310px;
   }
@@ -1363,10 +1433,10 @@ aside .sideNav li {
     display: -ms-flexbox;
     display: flex;
   }
-  header .headingContainerHome {
+  .headingContainerHome {
     width: 66%;
   }
-  header .imgContainerHeaderAbout img {
+  .imgContainerHeaderAbout img {
     top: 50px;
   }
   .homeHeader {
@@ -1408,10 +1478,10 @@ aside .sideNav li {
   }
 }
 @media (max-width: 1075px) {
-  header .headingContainerHome {
+  .headingContainerHome {
     width: 72%;
   }
-  header .imgContainerHeaderAbout img {
+  .imgContainerHeaderAbout img {
     top: 100px;
   }
   .homeHeader {
@@ -1473,6 +1543,12 @@ aside .sideNav li {
   .wrapper {
     width: 85%;
   }
+  .imgContainerHeaderAbout {
+    width: 60%;
+  }
+  .headingContainerHome {
+    width: 70%;
+  }
   .communication h3 {
     font-size: 38px;
   }
@@ -1530,6 +1606,9 @@ aside .sideNav li {
   }
 }
 @media (max-width: 984px) {
+  .imgContainerHeaderAbout img {
+    top: 126px;
+  }
   .locations .imgContainerNew img {
     top: 45%;
   }
@@ -1541,6 +1620,9 @@ aside .sideNav li {
   }
 }
 @media (max-width: 945px) {
+  .imgContainerHeaderAbout {
+    width: 62%;
+  }
   .about {
     padding-top: 100px;
     /*
@@ -1574,6 +1656,9 @@ aside .sideNav li {
   }
 }
 @media (max-width: 925px) {
+  .about {
+    padding-top: 70px;
+  }
   .blogHeader {
     background-position-x: -300px;
   }
@@ -1683,11 +1768,11 @@ aside .sideNav li {
   }
 }
 @media (max-width: 725px) {
-  header .headingContainerHome h2 {
+  .headingContainerHome h2 {
     font-size: 8vw;
   }
-  header .imgContainerHeaderAbout img {
-    top: 115px;
+  .imgContainerHeaderAbout img {
+    top: 140px;
   }
   .locations .imgContainerLocations,
 .locations .textContainerLocations {
@@ -1716,7 +1801,7 @@ aside .sideNav li {
   }
 }
 @media (max-width: 690px) {
-  header .imgContainerHeaderAbout img {
+  .imgContainerHeaderAbout img {
     top: 130px;
   }
   .blogPost .blogPostArticle {
@@ -1727,10 +1812,10 @@ aside .sideNav li {
   }
 }
 @media (max-width: 650px) {
-  header .imgContainerHeaderAbout {
+  .imgContainerHeaderAbout {
     width: 62%;
   }
-  header .imgContainerHeaderAbout img {
+  .imgContainerHeaderAbout img {
     top: 50px;
   }
   .homeHeader {
@@ -1785,7 +1870,7 @@ aside .sideNav li {
   }
 }
 @media (max-width: 580px) {
-  header .headingContainerHome h2 {
+  .headingContainerHome h2 {
     font-size: 48px;
   }
   .homeHeader {
@@ -1860,16 +1945,16 @@ aside .sideNav li {
   .homeHeader {
     height: 400px;
   }
-  header .headingContainerHome {
+  .headingContainerHome {
     width: 100%;
   }
-  header .headingContainerHome h2 {
+  .headingContainerHome h2 {
     font-size: 45px;
   }
-  header .imgContainerHeaderAbout {
+  .imgContainerHeaderAbout {
     width: 68%;
   }
-  header .imgContainerHeaderAbout img {
+  .imgContainerHeaderAbout img {
     top: 30px;
   }
   .gallery {
@@ -1901,7 +1986,7 @@ aside .sideNav li {
   }
 }
 @media (max-width: 475px) {
-  header .headingContainerHome h2 {
+  .headingContainerHome h2 {
     font-size: 42px;
   }
   .homeHeader {
@@ -1926,10 +2011,10 @@ aside .sideNav li {
   }
 }
 @media (max-width: 445px) {
-  header .headingContainerHome h2 {
+  .headingContainerHome h2 {
     font-size: 40px;
   }
-  header .imgContainerHeaderAbout {
+  .imgContainerHeaderAbout {
     width: 75%;
   }
   .homeHeader {
@@ -1979,7 +2064,7 @@ aside .sideNav li {
   .menuContent {
     padding-left: 0;
   }
-  header .headingContainerHome {
+  .headingContainerHome {
     width: 61%;
   }
   .homeHeader {
