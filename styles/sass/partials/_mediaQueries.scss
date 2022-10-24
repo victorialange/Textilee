@@ -176,7 +176,7 @@
     //SIDE BAR
     aside {
         .textContainerAside {
-            padding-top: 410px;
+            padding-top: 380px;
         }
     }
 }
@@ -235,7 +235,7 @@
     //SIDE BAR
     aside {
         .textContainerAside {
-            padding-top: 380px;
+            padding-top: 360px;
         }
     }
 }
@@ -306,6 +306,13 @@
             padding-right: 58px;
         }
     }
+    //BLOG PAGE
+    //SIDE BAR
+    aside {
+        .textContainerAside {
+            padding-top: 330px;
+        }
+    }
 }
 
 @media (max-width: 1285px) {
@@ -321,6 +328,18 @@
         .imgContainerLocations {
             width: calc((100% / 2) - 75px);
         }
+        .imgContainerNew {
+            img {
+                top: 40%;
+            }
+        }
+    }
+    //BLOG PAGE
+    //SIDE BAR
+    aside {
+        .textContainerAside {
+            padding-top: 320px;
+        }
     }
 }
 
@@ -330,7 +349,7 @@
     .locations {
         .imgContainerNew {
             img {
-                top: 37%;
+                top: 42%;
             }
         }
     }
@@ -341,7 +360,7 @@
     //HEADER
     .imgContainerHeaderAbout {
         img {
-            top: 165px
+            top: 165px;
         }
     }
     //BLOG PAGE
@@ -354,7 +373,7 @@
     //SIDE BAR
     aside {
         .textContainerAside {
-            padding-top: 340px;
+            padding-top: 305px;
         }
     }
 }
@@ -412,6 +431,12 @@
             padding-top: 280px;
         }
     }
+    //SIDE BAR
+    aside {
+        .textContainerAside {
+            padding-top: 285px;
+        }
+    }
 }
 
 @media (max-width: 1100px) {
@@ -420,6 +445,14 @@
     .communication {
         h3 {
             font-size: 41px;
+        }
+    }
+    //LOCATIONS section
+    .locations {
+        .imgContainerNew {
+            img {
+                top: 30%;
+            }
         }
     }
     //BLOG PAGE
@@ -436,7 +469,7 @@
     //SIDE BAR
     aside {
         .textContainerAside {
-            padding-top: 310px;
+            padding-top: 265px;
         }
     }
 }
@@ -520,7 +553,7 @@
     //SIDE BAR
     aside {
         .textContainerAside {
-            padding-top: 300px;
+            padding-top: 260px;
         }
     }
 }
@@ -615,7 +648,7 @@
     //SIDE BAR
     aside {
         .textContainerAside {
-            padding-top: 285px;
+            padding-top: 250px;
         }
     }
     
@@ -635,7 +668,7 @@
     //SIDE BAR
     aside {
         .textContainerAside {
-            padding-top: 275px;
+            padding-top: 240px;
         }
     }
 }
@@ -675,7 +708,7 @@
     //SIDE BAR
     aside {
         .textContainerAside {
-            padding-top: 260px;
+            padding-top: 230px;
         }
     }
 }
@@ -693,16 +726,10 @@
         .flexAbout {
             flex-direction: column-reverse;
         }
-        //hide IMG CONTAINER DESKTOP
         .imgContainerAbout {
-            //display: none;
             align-self: flex-end;
             width: 30%;
         }
-        /*
-        .imgContainerAboutMobile {
-            display: flex;
-        }*/
         .textContainerAbout {
             width: 58%;
             margin-top: -100px;
@@ -723,6 +750,13 @@
             width: 100%;
         }
     }
+    //BLOG PAGE
+    //SIDE BAR
+    aside {
+        .textContainerAside {
+            padding-top: 230px;
+        }
+    }
 }
 
 //STYLES FOR TABLETS
@@ -740,6 +774,12 @@
     .imgContainerHeaderBlog {
         img {
             box-shadow: 32px 30px 0 -15px variables.$turqoiseBlue;
+        }
+    }
+    //SIDE BAR
+    aside {
+        .textContainerAside {
+            padding-top: 215px;
         }
     }
 }
@@ -814,7 +854,7 @@
     //SIDE BAR
     aside {
         .textContainerAside {
-            padding-top: 230px;
+            padding-top: 200px;
         }
     }
 }
