@@ -1,0 +1,58 @@
+@use "../global/variables";
+
+// ABOUT section
+.about {
+    background: variables.$lightSkyBlue;
+    padding-top: 240px;
+    padding-bottom: 120px;
+    // FLEX container ABOUT
+    .flexAbout {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    // TEXT CONTAINER ABOUT
+    .textContainerAbout {
+        width: 61%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 7.5px;
+        p {
+            padding-bottom: 20px;
+        }
+        // a as BUTTON
+        .button {
+            align-self: flex-start;
+        }
+    }
+    // IMG CONTAINER ABOUT MOBILE DESKTOP
+    /*
+    .imgContainerAboutMobile {
+        display: none;
+        width: 39%;
+        //display: flex; for media
+        justify-content: right;
+        // IMG 
+        img {
+            height: fit-content;
+            // smallest height with min-content
+            box-shadow: -23px 25px 0 -3px variables.$turqoiseBlue;
+            // BOX SHADOW: horizontal offset - vertical offset - blur - spread - color
+            //width: 63%;
+        }
+    }*/
+    // IMG container ABOUT
+    .imgContainerAbout {
+        width: 39%;
+        display: flex;
+        justify-content: right;
+        // IMG 
+        img {
+            height: fit-content;
+            // smallest height with min-content
+            box-shadow: -23px 25px 0 -3px variables.$turqoiseBlue;
+            // BOX SHADOW: horizontal offset - vertical offset - blur - spread - color
+            //width: 63%;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@use "../global/variables";
+
+// GALLERY section
+.gallery {
+    background: variables.$teal;
+    padding: 120px 0;
+}
+// UL as FLEX container for IMG
+.galleryFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+        width: calc((100% / 3) - 30px);
+    }
+    li:nth-child(2) {
+        margin: 0 15px;
+    }
+}

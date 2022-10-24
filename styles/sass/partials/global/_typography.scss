@@ -1,0 +1,149 @@
+@use "./variables";
+
+// TYPOGRAPHY
+
+//base font size: 20px
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: variables.$bodyFont;
+    font-size: variables.$baseFontSize;
+    color: variables.$primaryBody;
+}
+
+h1, h2, h3, h4 {
+    font-family: variables.$headingFont;
+    font-weight: normal;
+    color: variables.$darkSlateBlue;
+    margin: 0;
+}
+
+h1 {
+    color: variables.$blackLogo;
+    font-size: 1.5rem;
+    line-height: 24px;
+    letter-spacing: 1.7px;
+}
+
+h2 {
+    font-size: 2.9rem;
+    line-height: 68px;
+}
+
+h3 {
+    font-size: 2.15rem;
+    line-height: 58px;
+    letter-spacing: 2.7px;
+}
+
+h4 {
+    color: variables.$white;
+    font-size: 2rem;
+    line-height: 58px;
+    letter-spacing: 2.5px;
+}
+
+p {
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+ul, li, a, input {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+nav,
+.address {
+    font-size: 1rem;
+    letter-spacing: 1.4px;
+    line-height: 29px;
+}
+
+//Blog page
+.blogPost h3 {
+    color: variables.$white;
+}
+
+.comments h3 {
+    font-size: 2rem;
+    color: variables.$blackLogo;
+}
+
+.blogPost h5 {
+    color: variables.$lightSkyBlue;
+}
+
+aside h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    color: variables.$darkSlateBlue;
+    font-size: 1rem;
+    letter-spacing: 1.4px;
+    margin-top: 10px;
+    line-height: 29px;
+}
+
+.blog h2,
+.contact h2 {
+    font-size: 3.4rem;
+    line-height: 64px;
+}
+
+// FORM
+
+label {
+    letter-spacing: 1.4px;
+    line-height: 29px;
+}
+
+textarea {
+    padding: 35px 30px 30px 30px;
+}
+
+.contactForm textarea {
+    padding: 35px 25px 25px 25px;
+}
+
+input {
+    padding: 15px 5px;
+}
+
+input,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+}
+
+.contactForm,
+.contactForm ::placeholder,
+.contactForm input,
+.contactForm textarea {
+    color: variables.$white;
+}
+
+//ICONS CONTACT
+.socialMedia i {
+    color: variables.$darkSlateBlue;
+}
+
+//ADDRESS
+address {
+    font-style: inherit;
+}

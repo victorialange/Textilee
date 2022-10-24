@@ -4,9 +4,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Textilee - Blog</title>
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- link to Google Fonts Pacifico regular and Lato bold and regular -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- SKIP LINK -->
+    <a href="#mainContent" class="skipLink">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header class="blogHeader">
+        <!-- WRAPPER -->
+        <div class="wrapper">
+            <!-- FLEX CONTAINER for LOGO + HEADER NAV -->
+            <div class="headerFlex headerFlexBlog">
+                <!-- LOGO -->
+                <div class="logo">
+                    <!-- logo links to homepage -->
+                    <a href="./index.html">
+                        <h1>Textilee</h1>
+                    </a>
+                </div><!-- END LOGO -->
+                <!-- HEADER NAV -->
+                <nav class="headerNav">
+                    <!-- UL as FLEX container for NAV -->
+                    <ul class="headerNavFlex">
+                        <!-- HOME -->
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <!-- ABOUT -->
+                        <li>
+                            <a href="./index.html#about">About</a>
+                        </li>
+                        <!-- BLOG -->
+                        <li>
+                            <a href="./blog.html">Blog</a>
+                        </li>
+                        <!-- CONTACT -->
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav><!-- END HEADER NAV -->
+                <!-- SLIDE OUT MENU for MOBILE and TABLET -->
+                <!-- used this blog post that Esther mentioned https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390 as a guide to attempt slide out nav without JS -->
+                <nav class="slideOutNav blogNav">
+                    <input type="checkbox" id="menu">
+                    <label for="menu">Menu</label>
+                    <!-- SLIDE OUT MENU CONTENT -->
+                    <div class="menuContent">
+                        <ul>
+                            <!-- HOME -->
+                            <li>
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <!-- ABOUT -->
+                            <li>
+                                <a href="./index.html#about">About</a>
+                            </li>
+                            <!-- BLOG -->
+                            <li>
+                                <a href="./blog.html">Blog</a>
+                            </li>
+                            <!-- CONTACT -->
+                            <li>
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                         </ul>
+                    </div><!--END MENU CONTENT -->
+                </nav><!-- END SLIDE OUT MENU -->
+            </div><!-- END HEADERFLEX for LOGO and NAV -->
+            <!-- HEADING CONTAINER -->
+            <div class="headingContainer blog">
+                <h2>Blog</h2>
+            </div><!-- END HEADING CONTAINER -->
+        </div><!-- END WRAPPER -->
+        <!-- IMG CONTAINER overlapping HEADER and ABOUT section -->
+        <div class="imgContainerHeaderBlog">
+            <img src="./textilee-assets/blog-post-image.jpg" alt="light blue and light brown linen fabric stacked on top of each other">
+        </div><!-- END OVERLAPPING IMG CONTAINER -->
+    </header>
     
+    <!-- MAIN -->
+    <main id="mainContent">
+        <!-- BLOG POST SECTION -->
+        <section class="blogPost" id="blogPost">
+            
+            <!-- BLOG POST -->
+            <article class="blogPostArticle">
+                <h3>Our new collection</h3>
+                <!-- Author and date subheading -->
+                <h5>
+                    <time datetime="2019-10-05">Monday, October 5th, 2019</time>
+                        by Saron
+                </h5><!-- END AUTHOR and DATE -->
+                <!-- TEXT -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit maxime deleniti debitis, voluptatem quae ea nostrum maiores amet illo placeat expedita distinctio recusandae nihil molestias dolores. Laboriosam rerum atque odit. Maiores tempora reprehenderit tempore itaque possimus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, fugit nobis quam minus mollitia sit ea dolorem illo amet, itaque numquam? Odio nobis molestiae eveniet accusantium dolores dolorum facere, at iste architecto nulla ipsam nisi, deleniti animi repellendus laboriosam, ex illum qui quis dolore neque veniam assumenda!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, laborum dicta pariatur accusantium quisquam autem nisi perferendis nulla aliquam, eligendi dolor mollitia exercitationem unde! Itaque harum adipisci odit fugit quaerat corrupti! Incidunt culpa mollitia corrupti consequuntur ducimus hic quia est sint aliquam. Maiores, aliquid itaque fugiat ullam veniam quisquam dolor adipisci voluptates repellendus ut corrupti molestiae nihil rerum dignissimos inventore asperiores enim ab, repellat minus. Pariatur error dicta animi quae qui!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint in iure dolorum earum sunt sapiente cupiditate. Assumenda nostrum tempora fuga quia inventore.</p>
+            </article>
+            <!-- SIDE BAR -->
+            <aside id="sideBar">
+                <!-- IMG CONTAINER SIDEBAR -->
+                <div class="imgContainerAside">
+                    <img src="./textilee-assets/sidebar-image.jpg" alt="beige rolled up fabric">
+                </div><!-- END IMG CONTAINER SIDEBAR-->
+                <!-- TEXT CONTAINER SIDEBAR -->
+                <div class="textContainerAside">
+                    <h4>Our mission</h4>
+                    <p>Integer efficitur et leo ac dictum. Etiam lobortis elit ac elementum maximus integer.</p>
+                    <p>Find out more.</p>
+                </div><!-- END TEXT CONTAINER ASIDE -->
+                <!-- SIDENAV -->
+                <nav class="sideNav">
+                    <!-- SIDENAV HEADING -->
+                    <h4>Recent Posts</h4>
+                    <!-- UL as FLEX CONTAINER for SIDENAV  -->
+                    <ul class="sideNavFlex">
+                            
+                        <!-- list item 1 -->
+                        <li>
+                            <a href="#">Donec facilisis tortor ut</a>
+                        </li>
+                        <!-- list item 2 -->
+                        <li>
+                            <a href="#">Augue lacinia at viverra</a>
+                        </li>
+                        <!-- list item 3 -->
+                        <li>
+                            <a href="#">Semper sed sapiens metus</a>
+                        </li>
+                        <!-- list item 4 -->
+                        <li>
+                            <a href="#">Scelerisque nec pharetra</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </section>
+        
+        <!-- COMMENT SECTION -->
+        <section class="comments" id="comments">
+            <h3>Comments:</h3>
+            <!-- COMMENT 1 -->
+            <article class="comment">
+                <!-- IMG CONTAINER COMMENT 1 -->
+                <div class="imgContainerComment">
+                    <img src="./textilee-assets/comment-1.jpg" alt="profile photo of smiling female, with the name Louise">
+                </div><!-- END IMG CONTAINER COMMENT 1 -->
+                <!-- TEXT CONTAINER COMMENT 1 -->
+                <div class="textContainerComment">
+                    <!-- heading comment author and date -->
+                    <h5>
+                        <time datetime="2019-12-09">Tuesday December 9th, 2019</time>
+                        by Louise
+                    </h5><!-- END HEADING AUTHOR and DATE -->
+                    <!-- TEXT -->
+                    <p>Morbi eu risus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, sem sed aliquet rutrum, nunc urna malesuada lacus, sodales efficitur elit dolor tincidunt dui porta ante..</p>
+                </div><!-- END TEXT CONTAINER COMMENT 1 -->
+            </article>
+            <!-- COMMENT 2 -->
+            <article class="comment">
+                <!-- IMG CONTAINER COMMENT 2 -->
+                <div class="imgContainerComment">
+                    <img src="./textilee-assets/comment-2.jpg" alt="profile photo of a male wearing an orange beanie, with the name JP">
+                </div><!-- END IMG CONTAINER COMMENT 2 -->
+                <!-- TEXT CONTAINER COMMENT 2 -->
+                <div class="textContainerComment">
+                    <!-- HEADING AUTHOR and DATE -->
+                    <h5>
+                        <time datetime="2019-12-10">Wednesday December 10th, 2019</time>
+                        by JP
+                    </h5><!-- END HEADING AUTHOR and DATE -->
+                    <!-- TEXT -->
+                    <p>Aenean iaculis condimentum tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex tortor. Praesent eu. </p>
+                </div><!-- END TEXT CONTAINER COMMENT 2 -->
+            </article>
+            <!-- FORM -->
+            <form action="" method="POST" class="blogForm" >
+                <!-- FORM FIELD CONTAINER -->
+                <div class="field">
+                    <label for="userName">Name</label>
+                    <input type="text" name="userName" id="userName" required maxlength="250">
+                </div><!-- END FORM FIELD CONTAINER -->
+                <!-- FORM FIELD CONTAINER -->
+                <div class="field">
+                    <label for="userEmail">Email address</label>
+                    <input type="email" name="userEmail" id="userEmail" required>
+                </div><!-- END FORM FIELD CONTAINER -->
+                <div class="textAreaContainer">
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" id="comment" placeholder="Comment" required></textarea>
+                </div>
+                <button class="button buttonOne">post comment</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright ©️ 2019 Juno College</p>
+    </footer>
+
+    <!-- Font Awesome kit's code for icons -->
+    <script src="https://kit.fontawesome.com/89c2b5bd0d.js" crossorigin="anonymous"></script>
 </body>
 </html>

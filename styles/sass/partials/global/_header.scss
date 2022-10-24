@@ -1,0 +1,36 @@
+@use "./variables";
+
+// HEADER
+header {
+    padding-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeHeader {
+    // BACKGROUND IMG
+    background: url('./../textilee-assets/header-home.jpg');
+    background-position-x: center;
+    background-size: cover;
+    height: 750px;
+}
+
+// CONTAINER for h2
+.headingContainerHome {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// OVERLAPPING IMG between HEADER and ABOUT section inside main
+.imgContainerHeaderAbout {
+    width: 58%;
+    position: relative;
+    // IMG positioning
+    img {
+        height: min-content;
+        position: absolute;
+        top: 63px;
+        width: 100%;
+    }
+}

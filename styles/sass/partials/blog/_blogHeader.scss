@@ -1,0 +1,31 @@
+@use "../global/variables";
+
+// BLOG HEADER
+.blogHeader {
+    background: url('./../textilee-assets/blog-header.jpg');
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position-x: -70px;
+    background-size: cover;
+}
+
+.headerFlexBlog {
+    padding-bottom: 150px;
+}
+
+//HEADING CONTAINER BLOG
+.headingContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgContainerHeaderBlog {
+    width: 60.5%;
+    position: relative;
+    img {
+        position: absolute;
+        top: 180px;
+        box-shadow: 35px 30px 0 -15px variables.$turqoiseBlue;
+    }
+}

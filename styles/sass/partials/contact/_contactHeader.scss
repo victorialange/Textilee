@@ -1,0 +1,21 @@
+@use "../global/variables";
+
+// CONTACT HEADER
+.contactHeader {
+    background-image: url('./../textilee-assets/contact-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    height: 570px;
+}
+
+//HEADING CONTAINER CONTACT
+.headingContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact {
+    padding-top: 50px;
+}
+

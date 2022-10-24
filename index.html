@@ -13,37 +13,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <!-- SKIP LINK -->
+    <a href="#mainContent" class="skipLink">Skip to main content</a>
+
     <!-- HEADER -->
-    <header>
+    <header class="homeHeader">
         <!-- WRAPPER -->
         <div class="wrapper">
-            <!-- LOGO -->
-            <div class="logo">
-                <a href="./index.html">
-                    <h1>Textilee</h1>
-                </a>
-            </div><!-- END LOGO -->
-            <!-- NAV -->
-            <nav class="headerNav">
-                <ul class="headerNavFlex">
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="./blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <!-- FLEX CONTAINER for LOGO + HEADER NAV -->
+            <div class="headerFlex headerFlexHome">
+                <!-- LOGO -->
+                <div class="logo">
+                    <!-- logo links to homepage -->
+                    <a href="./index.html">
+                        <h1>Textilee</h1>
+                    </a>
+                </div><!-- END LOGO -->
+                <!-- HEADER NAV for DESKTOP -->
+                <nav class="headerNav">
+                    <!-- UL as FLEX container for NAV -->
+                    <ul class="headerNavFlex">
+                        <!-- HOME -->
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <!-- ABOUT -->
+                        <li>
+                            <a href="./index.html#about">About</a>
+                        </li>
+                        <!-- BLOG -->
+                        <li>
+                            <a href="./blog.html">Blog</a>
+                        </li>
+                        <!-- CONTACT -->
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav><!-- END HEADER NAV DESKTOP -->
+                <!-- SLIDE OUT MENU for MOBILE and TABLET -->
+                <!-- used this blog post that Esther mentioned https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390 as a guide to attempt slide out nav without JS -->
+                <nav class="slideOutNav">
+                    <input type="checkbox" id="menu">
+                    <label for="menu">Menu</label>
+                    <!-- SLIDE OUT MENU CONTENT -->
+                    <div class="menuContent">
+                        <ul>
+                            <!-- HOME -->
+                            <li>
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <!-- ABOUT -->
+                            <li>
+                                <a href="./index.html#about">About</a>
+                            </li>
+                            <!-- BLOG -->
+                            <li>
+                                <a href="./blog.html">Blog</a>
+                            </li>
+                            <!-- CONTACT -->
+                            <li>
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                         </ul>
+                    </div><!--END MENU CONTENT -->
+                </nav><!-- END SLIDE OUT MENU -->
+            </div><!-- END HEADERFLEX for LOGO and NAV -->
             <!-- HEADING CONTAINER -->
-            <div class="headingContainer">
+            <div class="headingContainerHome">
                 <h2>Textiles for all projects in mind</h2>
-            </div><!-- END MAIN HEADING CONTAINER -->
+            </div><!-- END HEADING CONTAINER -->
         </div><!-- END WRAPPER -->
         <!-- IMG CONTAINER overlapping HEADER and ABOUT section -->
         <div class="imgContainerHeaderAbout">
@@ -52,35 +91,43 @@
     </header>
 
     <!-- MAIN -->
-    <main>
+    <main id="mainContent">
         <!-- ABOUT section -->
         <section class="about" id="about">
             <!-- WRAPPER -->
-            <div class="wrapper">
-                <!-- TEXT CONTAINER -->
+            <div class="wrapper flexAbout">
+                <!-- IMG CONTAINER ABOUT MOBILE TABLET 
+                <div class="imgContainerAboutMobile">
+                    <img src="./textilee-assets/small-box.jpg" alt="a woman using a needle box, scissors and pink fabric">-->
+               <!-- </div> END IMG CONTAINER ABOUT MOBILE -->
+                <!-- TEXT CONTAINER ABOUT -->
                 <div class="textContainerAbout">
                     <h3>Learn new techniques</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam error sit dicta necessitatibus fugit voluptates itaque pariatur vitae sapiente ipsa ipsam id nostrum laborum obcaecati ex, perspiciatis quia reprehenderit facilis placeat. Ipsum tenetur dicta ut. Ducimus, odio quas eaque molestiae minima quibusdam dolor recusandae.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a ante eu massa congue pharetra at eget metus. Morbi ex eros, pulvinar non euismod id, venenatis sed erat. Praesent ut libero eu sem sollicitudin congue. Etiam sem sem, interdum vitae ultrices a, maximus ut risus.</p>
                     <a href="#" class="button buttonOne">find out more</a>
-                </div><!-- END TEXT CONTAINER -->
-                <!-- IMG CONTAINER -->
+                </div><!-- END TEXT CONTAINER ABOUT -->
+                <!-- IMG CONTAINER ABOUT -->
                 <div class="imgContainerAbout">
-                    <img src="./textilee-assets/small-box.jpg" alt="a woman using a needle box, scissors and pink fabric">
-                </div><!-- END IMG CONTAINER -->
+                    <img src="./textilee-assets/small-box.jpg" alt="a woman using a needle box, scissors and pink fabric"> 
+                </div><!-- END IMG CONTAINER ABOUT -->
             </div><!-- END WRAPPER -->
         </section>
 
         <!-- GALLERY section -->
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <!-- WRAPPER -->
             <div class="wrapper">
+                <!-- UL as FLEX container for GALLERY -->
                 <ul class="galleryFlex">
+                    <!-- IMG 1 -->
                     <li>
                         <img src="./textilee-assets/gallery-image-1.jpg" alt="">
                     </li>
+                    <!-- IMG 2 -->
                     <li>
                         <img src="./textilee-assets/gallery-image-2.jpg" alt="">
                     </li>
+                    <!-- IMG 3 -->
                     <li>
                         <img src="./textilee-assets/gallery-image-3.jpg" alt="">
                     </li>
@@ -88,67 +135,105 @@
             </div><!-- END WRAPPER -->
         </section>
 
-        <!-- INFO section -->
-        <section class="info">
+        <!-- COMMUNICATION section -->
+        <section class="communication" id="communication">
             <!-- WRAPPER -->
             <div class="wrapper">
-                <!-- FLEX container for INFO -->
-                <div class="infoFlex">
-                    <a href="#">
-                        <h3>Upcoming Events</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sunt quibusdam, inventore voluptas facere necessitatibus, et repellat cum quaerat consequatur dicta distinctio perspiciatis eaque exercitationem!</p>
-                    </a>
-                    <a href="#">
-                        <h3>Community</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sunt quibusdam, inventore voluptas facere necessitatibus, et repellat cum quaerat consequatur dicta distinctio perspiciatis eaque exercitationem!</p>
-                    </a>
-                    <a href="./blog.html">
-                        <h3>Blog</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sunt quibusdam, inventore voluptas facere necessitatibus, et repellat cum quaerat consequatur dicta distinctio perspiciatis eaque exercitationem!</p>
-                    </a>
-                    <a href="./contact.html">
-                        <h3>Get in Touch</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sunt quibusdam, inventore voluptas facere necessitatibus, et repellat cum quaerat consequatur dicta distinctio perspiciatis eaque exercitationem!</p>
-                    </a>
-                </div><!-- END FLEX CONTAINER INFO -->
+                <!-- FONT AWESOME icons as list styling with built-in CSS custom properties, instead of bulletpoints; fa-ul and fa-li to replace default bullets in UL; information taken from https://fontawesome.com/docs/web/style/lists -->
+
+                <!-- UL as FLEX container for COMMUNICATION -->
+                <ul class="fa-ul">
+                    <!-- LIST ITEM 1: EVENTS --> 
+                    <li>
+                        <!-- CALENDAR CHECK ICON as bulletpoint -->
+                        <span class="fa-li">
+                            <a href="#"><i class="fa-solid fa-calendar-check"></i></a>
+                        </span>
+                        <!-- TEXT CONTAINER LIST -->
+                        <div class="textContainerList">
+                            <h3>Upcoming Events</h3>
+                            <p>Maecenas justo eros, euismod sit amet luctus at, cursus vitae lectus. Phasellus dignissim, eros eget faucibus vulputate, nisi purus iaculis proin.</p>
+                        </div><!-- END TEXT CONTAINER LIST -->
+                    </li>
+                    <!-- LIST ITEM 2: COMMUNITY -->
+                    <li>
+                        <!-- USERS ICON as BULLETPOINT -->
+                        <span class="fa-li">
+                            <a href="#"><i class="fa-solid fa-users"></i></a>
+                        </span>
+                        <!-- TEXT CONTAINER LIST -->
+                        <div class="textContainerList">
+                            <h3>Community</h3>
+                            <p>Maecenas justo eros, euismod sit amet luctus at, cursus vitae lectus. Phasellus dignissim, eros eget faucibus vulputate, nisi purus iaculis proin.</p>
+                        </div><!-- END TEXT CONTAINER LIST -->
+                    </li>
+                    <!-- LIST ITEM 3: BLOG -->
+                    <li>
+                        <!-- FILE ICON as BULLETPOINT -->
+                        <span class="fa-li">
+                            <a href="./blog.html"><i class="fa-solid fa-file"></i></a>
+                        </span>
+                        <!-- TEXT CONTAINER LIST -->
+                        <div class="textContainerList">
+                            <h3>Blog</h3>
+                            <p>Maecenas justo eros, euismod sit amet luctus at, cursus vitae lectus. Phasellus dignissim, eros eget faucibus vulputate, nisi purus iaculis proin.</p>
+                        </div><!-- END TEXT CONTAINER LIST -->
+                    </li>
+                    <!-- LIST ITEM 4: CONTACT -->
+                    <li>
+                        <!-- PHONE FLIP ICON as BULLETPOINT -->
+                        <span class="fa-li">
+                            <a href="./contact.html"><i class="fa-solid fa-phone-flip"></i></a>
+                        </span>
+                        <!-- TEXT CONTAINER LIST -->
+                        <div class="textContainerList">
+                            <h3>Get in Touch</h3>
+                            <p>Maecenas justo eros, euismod sit amet luctus at, cursus vitae lectus. Phasellus dignissim, eros eget faucibus vulputate, nisi purus iaculis proin.</p>
+                        </div><!-- END TEXT CONTAINER LIST -->
+                    </li>
+                </ul>
             </div><!-- END WRAPPER -->
         </section>
-        <!-- LOCATION section -->
-        <section class="location">
+
+        <!-- LOCATIONS section -->
+        <section class="locations" id="locations">
             <!-- FLEX CONTAINER ONLINE MARKET -->
             <div class="onlineFlex">
                 <!-- IMG CONTAINER ONLINE MARKET -->
-                <div class="imgContainerOnline">
+                <div class="imgContainerOnline imgContainerLocations">
                     <img src="./textilee-assets/left-image.jpg" alt="shimmering light pink satin fabric">
                 </div><!-- END IMG CONTAINER ONLINE MARKET -->
                 <!-- TEXT CONTAINER ONLINE MARKET -->
-                <div class="textContainerOnline">
+                <div class="textContainerOnline textContainerLocations">
                     <h4>Discover our online market</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aspernatur laudantium deserunt dolorum voluptatem necessitatibus et doloremque laborum consequuntur officia aliquid, ipsa voluptatum fugiat provident, facere praesentium corporis neque architecto sed quam dolor? Alias?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis metus neque. Aenean ut nulla tempor, interdum lectus vel, porttitor enim. Fusce purus lorem, aliquet nec felis vitae, commodo pretium justo. Nunc sit amet.</p>
                     <a href="#" class="button buttonTwo">read more</a>
                 </div><!-- END TEXT CONTAINER ONLINE MARKET -->
             </div><!-- END FLEX CONTAINER ONLINE -->
             <!-- FLEX CONTAINER NEW LOCATIONS -->
             <div class="newLocationsFlex">
                 <!-- TEXT CONTAINER NEW LOCATIONS -->
-                <div class="textContainerNew">
+                <div class="textContainerNew textContainerLocations">
                     <h4>New locations</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aspernatur laudantium deserunt dolorum voluptatem necessitatibus et doloremque laborum consequuntur officia aliquid, ipsa voluptatum fugiat provident, facere praesentium corporis neque architecto sed quam dolor? Alias?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis metus neque. Aenean ut nulla tempor, interdum lectus vel, porttitor enim. Fusce purus lorem, aliquet nec felis vitae, commodo pretium justo. Nunc sit amet.</p>
                     <a href="#" class="button buttonTwo">read more</a>
                 </div><!-- END TEXT CONTAINER NEW LOCATIONS -->
                 <!-- IMG CONTAINER NEW LOCATIONS -->
-                <div class="imgContainerNew">
+                <div class="imgContainerNew imgContainerLocations">
                     <img src="./textilee-assets/right-image.jpg" alt="a person measuring fabric inside a working space/atelier">
                 </div><!-- END IMG CONTAINER NEW LOCATIONS -->
             </div><!-- END FLEX CONTAINER NEW LOCATIONS -->
-            <!-- BACKGROUND CONTAINER TRANSITION LOCATIONS TO SEARCH -->
+
+            <!-- BACKGROUND CONTAINER TRANSITION from LOCATIONS TO SEARCH section -->
             <div class="backgroundContainer">
             </div><!-- END BACKGROUND CONTAINER TRANSITION -->
         </section>
+
         <!-- SEARCH SECTION -->
-        <section class="search">
+        <section class="search" id="search">
             <!-- WRAPPER -->
-            <div class="wrapper">
+            <div class="wrapper searchFlex">
+                <!-- TEXT -->
                 <h3>Search by style</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolores modi, voluptate excepturi enim tempora laborum, id reiciendis aut cumque saepe rem illum veniam ad eligendi et quas maxime voluptatum suscipit molestias minima doloremque cupiditate libero ut! Adipisci neque impedit corrupti quasi excepturi facere odit dolore at, doloribus culpa voluptatibus et maiores.</p>
                 <a href="#" class="button buttonOne">find out more</a>
@@ -160,5 +245,8 @@
     <footer>
         <p>Copyright ©️ 2019 Juno College</p>
     </footer>
+
+    <!-- Font Awesome kit's code for icons -->
+    <script src="https://kit.fontawesome.com/89c2b5bd0d.js" crossorigin="anonymous"></script>
 </body>
 </html>
