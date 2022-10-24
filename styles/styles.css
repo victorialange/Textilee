@@ -834,6 +834,8 @@ header {
   color: inherit;
   color: #1A315C;
   background: #f5f5f5;
+  z-index: 10;
+  position: static;
   /* hide checkbox */
   /* closing x when bars or checkbox checked, X icon FONT AWESOME */
 }
@@ -885,9 +887,7 @@ header {
 }
 
 input:checked ~ .menuContent {
-  max-height: -webkit-min-content;
-  max-height: -moz-min-content;
-  max-height: min-content;
+  max-height: 100%;
 }
 
 input:checked ~ .headerFlex {
@@ -900,6 +900,10 @@ input:checked ~ .headerFlex {
 
 .contactNav {
   background: transparent;
+}
+
+input:checked + .headerFlex {
+  padding-bottom: 0;
 }
 
 footer {
