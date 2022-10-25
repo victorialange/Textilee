@@ -1170,6 +1170,7 @@
         img {
             top: 10px;
             width: 80%;
+            height: 200px;
         }
     }
     .headerFlexHome {
@@ -1180,6 +1181,7 @@
         .imgContainerAbout {
             img {
                 width: 80%;
+                height: 125px;
             }
         }
     }
@@ -1277,6 +1279,12 @@
 }
 
 @media (max-width: 475px) {
+    // SLIDE OUT NAV
+    .slideOutNav {
+        label {
+            font-size: 1.3rem;
+        }
+    }
     //HOME PAGE
     //HEADER
     .headingContainerHome {
@@ -1388,9 +1396,7 @@
             font-size: 1.4rem;
         }
     }
-    .menuContent {
-        padding-left: 0;
-    }
+    
     //HOME PAGE
     //HEADER
     .headingContainerHome {
@@ -1451,6 +1457,27 @@
     
 }
 
+@media (max-width: 408px) {
+    //SLIDE OUT NAV
+    .menuContent {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 396px) {
+    //SLIDE OUT NAV
+    .menuContent {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 386px) {
+    //SLIDE OUT NAV
+    .menuContent {
+        padding-left: 40px;
+    }
+}
+
 @media (max-width: 375px) {
     //MOBILE NAV
     .slideOutNav {
@@ -1461,6 +1488,10 @@
         input:checked + label:after {
             right: -35px;
         }
+    }
+    .menuContent {
+        padding-left: 50px;
+        font-size: 16px;
     }
     //HOME PAGE
     //HEADER
@@ -1504,12 +1535,13 @@
             right: -30px;
         }
     }
+    .menuContent {
+        font-size: 15px;
+    }
     //HOME PAGE
     //HEADER
-    header {
-        .headingContainerHome {
-            width: 75%;
-        }
+    .headingContainerHome {
+        width: 75%;
     }
     .homeHeader {
         //height: 415px;
@@ -1589,6 +1621,17 @@
         label:after,
         input:checked + label:after {
             right: -22.5px;
+        }
+    }
+    .menuContent {
+        padding-left: 50px;
+        font-size: 12px;
+    }
+    //HOME PAGE
+    //HEADER
+    .imgContainerHeaderAbout {
+        img {
+            height: 150px;
         }
     }
     //BLOG PAGE
