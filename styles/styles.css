@@ -580,6 +580,7 @@ address {
 
 .locations {
   background: #21404F;
+  overflow-x: clip;
 }
 .locations .onlineFlex {
   display: -webkit-box;
@@ -758,6 +759,7 @@ header {
   padding-top: 30px;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: clip;
 }
 
 .homeHeader {
@@ -834,6 +836,7 @@ header {
   color: inherit;
   color: #1A315C;
   background: #f5f5f5;
+  overflow-x: clip;
   /* hide checkbox */
   /* closing x when bars or checkbox checked, X icon FONT AWESOME */
 }
@@ -947,6 +950,7 @@ footer p {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow-x: clip;
 }
 .blogPost .blogPostArticle {
   width: 61%;
@@ -978,6 +982,7 @@ aside {
   position: sticky;
   top: 200px;
   right: 0;
+  overflow-x: clip;
 }
 aside .imgContainerAside {
   position: relative;
@@ -1142,6 +1147,7 @@ aside .sideNav li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow-x: clip;
 }
 
 .addressContainer {

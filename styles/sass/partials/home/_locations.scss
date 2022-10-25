@@ -3,6 +3,7 @@
 // LOCATIONS section
 .locations {
     background: variables.$teal;
+    overflow-x: clip;
     // FLEX container for ONLINE MARKET part
     .onlineFlex {
         display: flex;
