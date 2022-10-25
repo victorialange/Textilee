@@ -801,6 +801,10 @@ header {
   line-height: 29px;
 }
 
+.logo {
+  z-index: 10;
+}
+
 .headerFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -849,7 +853,7 @@ header {
   position: relative;
   font-family: inherit;
   text-transform: uppercase;
-  right: -90px;
+  right: -30%;
 }
 .slideOutNav label:after {
   content: "\f0c9";
@@ -1894,6 +1898,9 @@ aside .sideNav li {
   }
 }
 @media (max-width: 580px) {
+  .menuContent {
+    padding-left: 10px;
+  }
   .headingContainerHome h2 {
     font-size: 48px;
   }
@@ -2143,19 +2150,32 @@ aside .sideNav li {
   }
 }
 @media (max-width: 408px) {
+  .slideOutNav label {
+    font-size: 1.3rem;
+  }
+  .slideOutNav label:after,
+.slideOutNav input:checked + label:after {
+    right: -35px;
+  }
   .menuContent {
     font-size: 18px;
   }
 }
-@media (max-width: 396px) {
-  .menuContent {
-    padding-left: 50px;
-  }
-}
+/*
+@media (max-width: 397px) {
+    //SLIDE OUT NAV
+    .menuContent {
+        padding-left: 10px;
+    }
+}*/
 @media (max-width: 386px) {
-  .menuContent {
-    padding-left: 40px;
+  .slideOutNav label {
+    left: 50px;
   }
+  /*
+  .menuContent {
+      padding-left: 10px;
+  }*/
   .slideOutNav,
 .menuContent,
 .headerFlexHome,
@@ -2172,15 +2192,7 @@ aside,
   }
 }
 @media (max-width: 375px) {
-  .slideOutNav label {
-    font-size: 1.3rem;
-  }
-  .slideOutNav label:after,
-.slideOutNav input:checked + label:after {
-    right: -35px;
-  }
   .menuContent {
-    padding-left: 50px;
     font-size: 16px;
   }
   header .headingContainerHome {
@@ -2269,14 +2281,14 @@ aside,
 @media (max-width: 338px) {
   .slideOutNav label {
     font-size: 1rem;
+    left: 40px;
   }
   .slideOutNav label:after,
 .slideOutNav input:checked + label:after {
     right: -22.5px;
   }
   .menuContent {
-    padding-left: 50px;
-    font-size: 12px;
+    font-size: 15px;
   }
   .imgContainerHeaderAbout img {
     height: 150px;

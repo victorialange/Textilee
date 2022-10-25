@@ -9,6 +9,11 @@
     line-height: 29px;
 }
 
+//LOGO
+.logo {
+    z-index: 10;
+}
+
 // FLEX container for LOGO and NAV
 .headerFlex {
     display: flex;
@@ -57,7 +62,7 @@
         position: relative;
         font-family: inherit;
         text-transform: uppercase;
-        right: -90px;
+        right: -30%;
     }
     // MENU BARS ICON FONT AWESOME
     label:after {

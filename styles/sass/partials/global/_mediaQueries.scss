@@ -1081,6 +1081,10 @@
 
 //STYLES FOR MOBILE DEVICES
 @media (max-width: 580px) {
+    //MOBILE NAV
+    .menuContent {
+        padding-left: 10px;
+    }
     //HOME PAGE
     //HEADER
     .headingContainerHome {
@@ -1466,23 +1470,39 @@
 
 @media (max-width: 408px) {
     //SLIDE OUT NAV
+    .slideOutNav {
+        label {
+            font-size: 1.3rem;
+        }
+        label:after,
+        input:checked + label:after {
+            right: -35px;
+        }
+    }
     .menuContent {
         font-size: 18px;
     }
 }
 
-@media (max-width: 396px) {
+/*
+@media (max-width: 397px) {
     //SLIDE OUT NAV
     .menuContent {
-        padding-left: 50px;
+        padding-left: 10px;
     }
-}
+}*/
 
 @media (max-width: 386px) {
     //SLIDE OUT NAV
-    .menuContent {
-        padding-left: 40px;
+    .slideOutNav {
+        label {
+            left: 50px;
+        }
     }
+    /*
+    .menuContent {
+        padding-left: 10px;
+    }*/
     //HORIZONTAL SCROLL FIX FOR MOBILE
     .slideOutNav,
     .menuContent,
@@ -1502,17 +1522,9 @@
 
 @media (max-width: 375px) {
     //MOBILE NAV
-    .slideOutNav {
-        label {
-            font-size: 1.3rem;
-        }
-        label:after,
-        input:checked + label:after {
-            right: -35px;
-        }
-    }
+    
     .menuContent {
-        padding-left: 50px;
+        //padding-left: 10px;
         font-size: 16px;
     }
     //HOME PAGE
@@ -1644,6 +1656,7 @@
     .slideOutNav {
         label {
             font-size: 1rem;
+            left: 40px;
         }
         label:after,
         input:checked + label:after {
@@ -1651,8 +1664,8 @@
         }
     }
     .menuContent {
-        padding-left: 50px;
-        font-size: 12px;
+        //padding-left: 10px;
+        font-size: 15px;
     }
     //HOME PAGE
     //HEADER
