@@ -1938,12 +1938,14 @@ aside .sideNav li {
   .imgContainerHeaderAbout img {
     top: 10px;
     width: 80%;
+    height: 200px;
   }
   .headerFlexHome {
     padding-bottom: 20px;
   }
   .about .imgContainerAbout img {
     width: 80%;
+    height: 125px;
   }
   .blogPost .blogPostArticle {
     width: 95%;
@@ -2007,6 +2009,9 @@ aside .sideNav li {
   }
 }
 @media (max-width: 475px) {
+  .slideOutNav label {
+    font-size: 1.3rem;
+  }
   .headingContainerHome h2 {
     font-size: 42px;
   }
@@ -2082,9 +2087,6 @@ aside .sideNav li {
   .slideOutNav label {
     font-size: 1.4rem;
   }
-  .menuContent {
-    padding-left: 0;
-  }
   .headingContainerHome {
     width: 61%;
   }
@@ -2124,6 +2126,21 @@ aside .sideNav li {
     height: 0;
   }
 }
+@media (max-width: 408px) {
+  .menuContent {
+    font-size: 18px;
+  }
+}
+@media (max-width: 396px) {
+  .menuContent {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 386px) {
+  .menuContent {
+    padding-left: 40px;
+  }
+}
 @media (max-width: 375px) {
   .slideOutNav label {
     font-size: 1.3rem;
@@ -2131,6 +2148,10 @@ aside .sideNav li {
   .slideOutNav label:after,
 .slideOutNav input:checked + label:after {
     right: -35px;
+  }
+  .menuContent {
+    padding-left: 50px;
+    font-size: 16px;
   }
   header .headingContainerHome {
     width: 70%;
@@ -2157,7 +2178,10 @@ aside .sideNav li {
 .slideOutNav input:checked + label:after {
     right: -30px;
   }
-  header .headingContainerHome {
+  .menuContent {
+    font-size: 15px;
+  }
+  .headingContainerHome {
     width: 75%;
   }
   .homeHeader {
@@ -2216,6 +2240,13 @@ aside .sideNav li {
   .slideOutNav label:after,
 .slideOutNav input:checked + label:after {
     right: -22.5px;
+  }
+  .menuContent {
+    padding-left: 50px;
+    font-size: 12px;
+  }
+  .imgContainerHeaderAbout img {
+    height: 150px;
   }
   aside {
     width: -webkit-min-content;
