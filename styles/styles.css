@@ -589,6 +589,7 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow-x: clip;
 }
 .locations .imgContainerOnline {
   position: relative;
@@ -616,6 +617,7 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow-x: clip;
 }
 .locations .textContainerNew {
   text-align: right;
@@ -878,6 +880,7 @@ header {
   max-height: 0;
   overflow: hidden;
   text-align: center;
+  overflow-x: clip;
 }
 .menuContent ul {
   padding: 0;
@@ -915,6 +918,7 @@ footer p {
   background-repeat: no-repeat;
   background-position-x: -70px;
   background-size: cover;
+  overflow-x: clip;
 }
 
 .headerFlexBlog {
@@ -959,6 +963,7 @@ footer p {
   -webkit-box-shadow: 7px 6px 0 6px #0CADC0;
           box-shadow: 7px 6px 0 6px #0CADC0;
   padding: 420px 70px 80px 140px;
+  overflow-x: clip;
 }
 .blogPost .blogPostArticle p {
   margin-bottom: 40px;
@@ -1122,6 +1127,7 @@ aside .sideNav li {
   background-size: cover;
   background-position-x: right;
   height: 570px;
+  overflow-x: clip;
 }
 
 .headingContainer {
@@ -1171,6 +1177,7 @@ aside .sideNav li {
   padding: 70px 50px 40px 50px;
   -webkit-box-shadow: 26px 30px 0 -3px #0CADC0;
           box-shadow: 26px 30px 0 -3px #0CADC0;
+  overflow-x: clip;
 }
 .contactForm label {
   margin-left: 20px;
