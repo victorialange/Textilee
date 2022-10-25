@@ -9,6 +9,7 @@
         display: flex;
         justify-content: space-between;
         // margin-bottom: 80px;
+        overflow-x: clip;
     }
     // IMG container ONLINE
     .imgContainerOnline {
@@ -38,6 +39,7 @@
     .newLocationsFlex {
         display: flex;
         justify-content: space-between;
+        overflow-x: clip;
     }
     // TEXT CONTAINER for NEW LOCATIONS
     .textContainerNew {

@@ -92,6 +92,7 @@
     max-height: 0;
     overflow: hidden;
     text-align: center;
+    overflow-x: clip;
     ul {
         //list-style-type: none;
         padding: 0;
