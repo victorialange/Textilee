@@ -1936,8 +1936,11 @@ aside .sideNav li {
 }
 @media (max-width: 519px) {
   .imgContainerHeaderAbout img {
-    top: 0px;
+    top: 10px;
     width: 80%;
+  }
+  .headerFlexHome {
+    padding-bottom: 20px;
   }
   .about .imgContainerAbout img {
     width: 80%;
