@@ -1168,7 +1168,19 @@
     //HEADER
     .imgContainerHeaderAbout {
         img {
-            top: 0px;
+            top: 10px;
+            width: 80%;
+        }
+    }
+    .headerFlexHome {
+        padding-bottom: 20px;
+    }
+    //ABOUT section
+    .about {
+        .imgContainerAbout {
+            img {
+                width: 80%;
+            }
         }
     }
     //BLOG PAGE
