@@ -1000,7 +1000,7 @@
     //ABOUT section
     .about {
         .textContainerAbout {
-            width: 74%;
+            width: 73%;
         }
     }
     //GALLERY section
@@ -1406,6 +1406,11 @@
         height: 415px;
         background-position: -255px;
     }
+    .imgContainerHeaderAbout {
+        img {
+            height: 180px;
+        }
+    }
     //ABOUT section
     .about {
         padding-top: 170px;
@@ -1524,7 +1529,7 @@
     }
 }
 
-@media (max-width: 351px) {
+@media (max-width: 352px) {
     //MOBILE NAV
     .slideOutNav {
         label {
@@ -1546,6 +1551,11 @@
     .homeHeader {
         //height: 415px;
         background-position: -300px;
+    }
+    .imgContainerHeaderAbout {
+        img {
+            height: 150px;
+        }
     }
     //ABOUT section
     .about {

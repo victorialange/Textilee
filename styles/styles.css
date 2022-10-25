@@ -1833,7 +1833,7 @@ aside .sideNav li {
     height: 500px;
   }
   .about .textContainerAbout {
-    width: 74%;
+    width: 73%;
   }
   .gallery {
     padding: 100px 0;
@@ -2094,6 +2094,9 @@ aside .sideNav li {
     height: 415px;
     background-position: -255px;
   }
+  .imgContainerHeaderAbout img {
+    height: 180px;
+  }
   .about {
     padding-top: 170px;
   }
@@ -2170,7 +2173,7 @@ aside .sideNav li {
     padding-right: 15px;
   }
 }
-@media (max-width: 351px) {
+@media (max-width: 352px) {
   .slideOutNav label {
     font-size: 1.2rem;
   }
@@ -2186,6 +2189,9 @@ aside .sideNav li {
   }
   .homeHeader {
     background-position: -300px;
+  }
+  .imgContainerHeaderAbout img {
+    height: 150px;
   }
   .about {
     padding-top: 120px;
