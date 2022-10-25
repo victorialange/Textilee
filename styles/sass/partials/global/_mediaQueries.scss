@@ -991,7 +991,7 @@
     .imgContainerHeaderAbout {
         width: 62%;
         img {
-            top: 50px
+            top: 50px;
         }
     }
     .homeHeader {
@@ -1164,6 +1164,13 @@
 }
 
 @media (max-width: 519px) {
+    //HOME PAGE
+    //HEADER
+    .imgContainerHeaderAbout {
+        img {
+            top: 0px;
+        }
+    }
     //BLOG PAGE
     //BLOG POST section
     .blogPost {

@@ -1945,6 +1945,9 @@ aside .sideNav li {
   }
 }
 @media (max-width: 519px) {
+  .imgContainerHeaderAbout img {
+    top: 0px;
+  }
   .blogPost .blogPostArticle {
     width: 95%;
   }
