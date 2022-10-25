@@ -1169,6 +1169,15 @@
     .imgContainerHeaderAbout {
         img {
             top: 0px;
+            width: 80%;
+        }
+    }
+    //ABOUT section
+    .about {
+        .imgContainerAbout {
+            img {
+                width: 80%;
+            }
         }
     }
     //BLOG PAGE
