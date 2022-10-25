@@ -1081,6 +1081,7 @@
 
 //STYLES FOR MOBILE DEVICES
 @media (max-width: 580px) {
+    //HOME PAGE
     //HEADER
     .headingContainerHome {
         h2 {
@@ -1090,6 +1091,7 @@
     .homeHeader {
         height: 425px;
         background-position: -140px;
+        //overflow-x: hidden;
     }
     .headerFlexHome {
         padding-bottom: 40px;
@@ -1480,6 +1482,12 @@
     //SLIDE OUT NAV
     .menuContent {
         padding-left: 40px;
+    }
+    //HORIZONTAL SCROLL FIX FOR MOBILE
+    .homeHeader,
+    .blogHeader,
+    .contactHeader {
+        overflow-clip-margin: 0px;
     }
 }
 

@@ -2156,6 +2156,11 @@ aside .sideNav li {
   .menuContent {
     padding-left: 40px;
   }
+  .homeHeader,
+.blogHeader,
+.contactHeader {
+    overflow-clip-margin: 0px;
+  }
 }
 @media (max-width: 375px) {
   .slideOutNav label {
