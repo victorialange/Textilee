@@ -47,6 +47,7 @@
     color: variables.$darkSlateBlue;
     //similar white tone to header background image
     background: #f5f5f5;
+    overflow-x: clip;
     label {
         //font-family: 'Sedgwick Ave Display', cursive;
         font-size: 1.8rem;

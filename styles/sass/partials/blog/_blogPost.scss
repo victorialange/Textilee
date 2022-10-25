@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow-x: clip;
     //margin-top: -1000px;
     //padding-top: 0 or 140px;
     .blogPostArticle {
@@ -36,6 +37,7 @@ aside {
     position: sticky;
     top: 200px;
     right: 0;
+    overflow-x: clip;
     .imgContainerAside {
         position: relative;
         // width: 30%;
