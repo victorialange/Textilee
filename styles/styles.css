@@ -2156,9 +2156,18 @@ aside .sideNav li {
   .menuContent {
     padding-left: 40px;
   }
-  .homeHeader,
+  .slideOutNav,
+.menuContent,
+.headerFlexHome,
+.headerFlexBlog,
+.headerFlexContact,
+.homeHeader,
 .blogHeader,
-.contactHeader {
+.contactHeader,
+.locations,
+.blogPostArticle,
+aside,
+.contactForm {
     overflow-clip-margin: 0px;
   }
 }

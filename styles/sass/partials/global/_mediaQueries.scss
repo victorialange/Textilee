@@ -1484,9 +1484,18 @@
         padding-left: 40px;
     }
     //HORIZONTAL SCROLL FIX FOR MOBILE
+    .slideOutNav,
+    .menuContent,
+    .headerFlexHome,
+    .headerFlexBlog,
+    .headerFlexContact,
     .homeHeader,
     .blogHeader,
-    .contactHeader {
+    .contactHeader,
+    .locations,
+    .blogPostArticle,
+    aside,
+    .contactForm {
         overflow-clip-margin: 0px;
     }
 }
