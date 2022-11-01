@@ -1,9 +1,10 @@
 // create alert box when user has submitted form for blog page and contact page
 
-// create variable to store contact form element
+// create variable to store contact form and input element
 const contactFormEl = document.querySelector(".contactForm");
 const contactInputEl = document.querySelectorAll("input[name=contactInput], textarea[name=contactInput]");
-console.log(contactFormEl);
+
+//console.log(contactFormEl);
 
 // add eventListener to listen for when user "submits" contact form
 contactFormEl.addEventListener("submit", (event) => {
@@ -22,4 +23,5 @@ contactFormEl.addEventListener("submit", (event) => {
         };
     };
     
-} ) 
+} );
+
