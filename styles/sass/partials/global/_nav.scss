@@ -1,45 +1,116 @@
 @use "./variables";
 
 // HEADER NAV
-.headerNav {
+.mainNav,
+.hamburgerNav {
     font-weight: bold;
     color: variables.$darkSlateBlue;
-    text-transform: uppercase;
+    background: variables.$nav;
     letter-spacing: 1.4px;
     line-height: 29px;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    ul {
+        text-transform: uppercase;
+        // padding-top: 35px;
+    }
+}
+.mainNav {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.navLinks {
+    display: flex;
+    // justify-content: space-between;
+    width: fit-content;
+    li {
+        margin-right: 50px;
+    }
+    a {
+        display: inline-block;
+    }
+    // turqoiseBlue underline for selected li item when hovering/tab
+    a:hover,
+    a:focus,
+    a:active,
+    a:visited {
+        border-bottom: 5px solid variables.$turqoiseBlue;
+    }
+    li:last-child {
+        margin-right: 0;
+    }
 }
 
 //LOGO
 .logo {
+    // padding-top: 35px;
     z-index: 10;
+    width: fit-content;
+    a {
+        display: inline-block;
+    }
 }
 
-// FLEX container for LOGO and NAV
-.headerFlex {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 100px;
-    // UL as FLEX container for NAV
-    .headerNavFlex {
-        display: flex;
-        // right margin for all li elements
-        li {
-            margin-right: 50px;
-            
-        }
-        // no margin for last li element
-        li:nth-child(4) {
-            margin-right: 0;
-        }
-        // turqoiseBlue underline for selected li item when hovering/tab
-        a:hover,
-        a:focus,
-        a:active,
-        a:visited {
-            border-bottom: 5px solid variables.$turqoiseBlue;
-        }
-    } 
+// hamburger menu only visible with tablet and mobile
+.hamburgerMenu {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    i {
+        font-size: 1.4rem;
+        color: variables.$darkSlateBlue;
+        // margin-right: 50px;
+    }
 }
+
+// // FLEX container for LOGO and NAV
+// .headerFlex {
+//     display: flex;
+//     justify-content: space-between;
+//     padding-bottom: 100px;
+//     // UL as FLEX container for NAV
+//     .headerNavFlex {
+//         display: flex;
+//         // right margin for all li elements
+//         li {
+//             margin-right: 50px;
+            
+//         }
+//         // no margin for last li element
+//         li:nth-child(4) {
+//             margin-right: 0;
+//         }
+        
+//     } 
+// }
+
+// HAMBURGER NAV
+.hamburgerNav {
+    display: none;
+    i {
+        // transition property also necessary for rotation transformation of bars and times icon (later in media queries under .navActive class)
+        transition: all ease-in 0.3s;
+    }
+}
+
+.hamburgerMenu i:hover,
+.hamburgerMenu i:focus {
+    color: variables.$turqoiseBlue;
+    // &:not(:hover)
+    // &:not(:focus) {
+    //     color: variables.$darkSlateBlue;
+    // }
+}
+
 
 //SLIDE OUT MENU
 .slideOutNav {
@@ -53,40 +124,42 @@
     //similar white tone to header background image
     background: #f5f5f5;
     overflow-x: clip;
-    label {
-        //font-family: 'Sedgwick Ave Display', cursive;
-        font-size: 1.8rem;
-        display: block;
-        cursor: pointer;
-        //padding: 10px 0 10px 50px;
-        position: relative;
-        font-family: inherit;
-        text-transform: uppercase;
-        right: -30%;
-    }
-    // MENU BARS ICON FONT AWESOME
-    label:after {
-        content: "\f0c9";  
-        /* text for character codes */
-        font-family: FontAwesome;
-        /*left:-5px;*/
-        right: -45px;
-        position:absolute;
-        /*top:0;*/
-    }
-    /* hide checkbox */
-    input#menu {
-        display: none;
-    }
-    /* closing x when bars or checkbox checked, X icon FONT AWESOME */
-    input:checked + label:after {
-        content: "\58";
-        font-family: FontAwesome;
-        /*left:-5px;*/
-        position:absolute;
-        /*top:0;*/
-        right: -45px;
-    }
+
+    // ORIGINAL CODE FOR MOBILE NAV WITHOUT JS
+    // label {
+    //     //font-family: 'Sedgwick Ave Display', cursive;
+    //     font-size: 1.8rem;
+    //     display: block;
+    //     cursor: pointer;
+    //     //padding: 10px 0 10px 50px;
+    //     position: relative;
+    //     font-family: inherit;
+    //     text-transform: uppercase;
+    //     right: -30%;
+    // }
+    // // MENU BARS ICON FONT AWESOME
+    // label:after {
+    //     content: "\f0c9";  
+    //     /* text for character codes */
+    //     font-family: FontAwesome;
+    //     /*left:-5px;*/
+    //     right: -45px;
+    //     position:absolute;
+    //     /*top:0;*/
+    // }
+    // /* hide checkbox */
+    // input#menu {
+    //     display: none;
+    // }
+    // /* closing x when bars or checkbox checked, X icon FONT AWESOME */
+    // input:checked + label:after {
+    //     content: "\58";
+    //     font-family: FontAwesome;
+    //     /*left:-5px;*/
+    //     position:absolute;
+    //     /*top:0;*/
+    //     right: -45px;
+    // }
 }
 // collapse and expand
 .menuContent {
@@ -109,11 +182,6 @@
     }
 }
 
-//give content height when menu icon clicked
-input:checked ~ .menuContent {
-    max-height: 100%;
-    //background: white;
-}
 
 //different background colours in blog and contact page
 .blogNav {
@@ -123,3 +191,13 @@ input:checked ~ .menuContent {
 .contactNav {
     background: transparent;
 }
+
+
+// ORIGINAL CODE WITHOUT JS
+//give content height when menu icon clicked
+// input:checked ~ .menuContent {
+//     max-height: 100%;
+//     //background: white;
+// }
+
+
