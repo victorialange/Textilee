@@ -102,8 +102,8 @@
     }
 }
 
-.hamburgerMenu i:hover,
-.hamburgerMenu i:focus {
+.hamburgerMenu:hover i,
+.hamburgerMenu:focus i {
     color: variables.$turqoiseBlue;
     // &:not(:hover)
     // &:not(:focus) {

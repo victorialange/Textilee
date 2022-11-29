@@ -893,8 +893,8 @@ header {
   transition: all ease-in 0.3s;
 }
 
-.hamburgerMenu i:hover,
-.hamburgerMenu i:focus {
+.hamburgerMenu:hover i,
+.hamburgerMenu:focus i {
   color: #0CADC0;
 }
 
