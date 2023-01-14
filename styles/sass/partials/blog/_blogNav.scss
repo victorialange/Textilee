@@ -1,0 +1,6 @@
+@use "../global/variables";
+// NAV for BLOG
+.blogNav,
+.blogHamburger {
+    background: variables.$blogNav;
+}

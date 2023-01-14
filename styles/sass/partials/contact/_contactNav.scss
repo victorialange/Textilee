@@ -1,0 +1,7 @@
+@use "../global/variables";
+
+// NAV FOR CONTACT
+.contactNav,
+.contactHamburger {
+    background: variables.$contactNav;
+}
