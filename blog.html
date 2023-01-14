@@ -16,12 +16,12 @@
     <!-- SKIP LINK -->
     <a href="#mainContent" class="skipLink">Skip to main content</a>
 
-    <!-- HEADER -->
-    <header class="blogHeader">
+    <!-- MAIN NAV for DESKTOP -->
+    <nav class="mainNav blogNav">
         <!-- WRAPPER -->
         <div class="wrapper">
             <!-- FLEX CONTAINER for LOGO + HEADER NAV -->
-            <div class="headerFlex headerFlexBlog">
+            <!-- <div class="headerFlex headerFlexHome"> -->
                 <!-- LOGO -->
                 <div class="logo">
                     <!-- logo links to homepage -->
@@ -29,56 +29,61 @@
                         <h1>Textilee</h1>
                     </a>
                 </div><!-- END LOGO -->
-                <!-- HEADER NAV -->
-                <nav class="headerNav">
-                    <!-- UL as FLEX container for NAV -->
-                    <ul class="headerNavFlex">
-                        <!-- HOME -->
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <!-- ABOUT -->
-                        <li>
-                            <a href="./index.html#about">About</a>
-                        </li>
-                        <!-- BLOG -->
-                        <li>
-                            <a href="./blog.html">Blog</a>
-                        </li>
-                        <!-- CONTACT -->
-                        <li>
-                            <a href="./contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav><!-- END HEADER NAV -->
-                <!-- SLIDE OUT MENU for MOBILE and TABLET -->
-                <!-- used this blog post that Esther mentioned https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390 as a guide to attempt slide out nav without JS -->
-                <nav class="slideOutNav blogNav">
-                    <input type="checkbox" id="menu">
-                    <label for="menu" tabindex="0">Menu</label>
-                    <!-- SLIDE OUT MENU CONTENT -->
-                    <div class="menuContent">
-                        <ul>
-                            <!-- HOME -->
-                            <li>
-                                <a href="./index.html">Home</a>
-                            </li>
-                            <!-- ABOUT -->
-                            <li>
-                                <a href="./index.html#about">About</a>
-                            </li>
-                            <!-- BLOG -->
-                            <li>
-                                <a href="./blog.html">Blog</a>
-                            </li>
-                            <!-- CONTACT -->
-                            <li>
-                                <a href="./contact.html">Contact</a>
-                            </li>
-                         </ul>
-                    </div><!--END MENU CONTENT -->
-                </nav><!-- END SLIDE OUT MENU -->
-            </div><!-- END HEADERFLEX for LOGO and NAV -->
+                <!-- HEADER NAV UL for DESKTOP -->
+                <ul class="navLinks">
+                    <!-- HOME -->
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <!-- ABOUT -->
+                    <li>
+                        <a href="./index.html#about">About</a>
+                    </li>
+                    <!-- BLOG -->
+                    <li>
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                    <!-- CONTACT -->
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            <!-- </div>END HEADERFLEX for LOGO and NAV -->
+        </div><!-- END WRAPPER -->
+    </nav><!-- END MAIN NAV DESKTOP -->
+            
+    <!-- SLIDE OUT MENU for MOBILE and TABLET -->
+    <!-- HAMBURGER NAV -->
+    <nav class="hamburgerNav blogHamburger">
+        <!-- LOGO BURGER FLEX container -->
+        <div class="logoBurgerFlex wrapper">
+            <!-- LOGO -->
+            <a href="./index.html" class="logo">
+                <h1>Textilee</h1>
+            </a>
+            
+            <!-- HAMBURGER MENU for mobile & tablet --> 
+            <button class="hamburgerMenu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div><!-- END LOGO BURGER FLEX + WRAPPER -->
+        </div>
+        <!-- SLIDE OUT NAV -->
+        <ul class="slideOut">
+            <!-- WRAPPER -->
+            <div class="wrapper">
+                <li><a href="./index.html" class="navLinkOne">Home</a></li>
+                <li><a href="./index.html#about" class="navLinkTwo">About</a></li>
+                <li><a href="./blog.html" class="navLinkThree">Blog</a></li>
+                <li><a href="./contact.html" class="navLinkFour">Contact</a></li>
+            </div><!-- END WRAPPER -->
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="blogHeader">
+        <!-- WRAPPER -->
+        <div class="wrapper">
             <!-- HEADING CONTAINER -->
             <div class="headingContainer blog">
                 <h2>Blog</h2>
@@ -152,57 +157,75 @@
         <!-- COMMENT SECTION -->
         <section class="comments" id="comments">
             <h3>Comments:</h3>
-            <!-- COMMENT 1 -->
-            <article class="comment">
-                <!-- IMG CONTAINER COMMENT 1 -->
-                <div class="imgContainerComment">
-                    <img src="./textilee-assets/comment-1.jpg" alt="profile photo of smiling female, with the name Louise">
-                </div><!-- END IMG CONTAINER COMMENT 1 -->
-                <!-- TEXT CONTAINER COMMENT 1 -->
-                <div class="textContainerComment">
-                    <!-- heading comment author and date -->
-                    <h5>
-                        <time datetime="2019-12-09">Tuesday December 9th, 2019</time>
-                        by Louise
-                    </h5><!-- END HEADING AUTHOR and DATE -->
-                    <!-- TEXT -->
-                    <p>Morbi eu risus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, sem sed aliquet rutrum, nunc urna malesuada lacus, sodales efficitur elit dolor tincidunt dui porta ante..</p>
-                </div><!-- END TEXT CONTAINER COMMENT 1 -->
-            </article>
-            <!-- COMMENT 2 -->
-            <article class="comment">
-                <!-- IMG CONTAINER COMMENT 2 -->
-                <div class="imgContainerComment">
-                    <img src="./textilee-assets/comment-2.jpg" alt="profile photo of a male wearing an orange beanie, with the name JP">
-                </div><!-- END IMG CONTAINER COMMENT 2 -->
-                <!-- TEXT CONTAINER COMMENT 2 -->
-                <div class="textContainerComment">
-                    <!-- HEADING AUTHOR and DATE -->
-                    <h5>
-                        <time datetime="2019-12-10">Wednesday December 10th, 2019</time>
-                        by JP
-                    </h5><!-- END HEADING AUTHOR and DATE -->
-                    <!-- TEXT -->
-                    <p>Aenean iaculis condimentum tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex tortor. Praesent eu. </p>
-                </div><!-- END TEXT CONTAINER COMMENT 2 -->
-            </article>
+
+            <!-- COMMENT CONTAINER -->
+            <div class="commentArea">
+
+                <!-- COMMENT 1 -->
+                <article class="comment">
+                    <!-- IMG CONTAINER COMMENT 1 -->
+                    <div class="imgContainerComment">
+                        <img src="./textilee-assets/comment-1.jpg" alt="profile photo of smiling female, with the name Louise">
+                    </div><!-- END IMG CONTAINER COMMENT 1 -->
+                    <!-- TEXT CONTAINER COMMENT 1 -->
+                    <div class="textContainerComment">
+                        <!-- heading comment author and date -->
+                        <h5>
+                            <time datetime="2019-12-09">Tuesday December 9th, 2019</time>
+                            by Louise
+                        </h5><!-- END HEADING AUTHOR and DATE -->
+                        <!-- TEXT -->
+                        <p>Morbi eu risus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, sem sed aliquet rutrum, nunc urna malesuada lacus, sodales efficitur elit dolor tincidunt dui porta ante..</p>
+                    </div><!-- END TEXT CONTAINER COMMENT 1 -->
+                </article>
+                <!-- COMMENT 2 -->
+                <article class="comment">
+                    <!-- IMG CONTAINER COMMENT 2 -->
+                    <div class="imgContainerComment">
+                        <img src="./textilee-assets/comment-2.jpg" alt="profile photo of a male wearing an orange beanie, with the name JP">
+                    </div><!-- END IMG CONTAINER COMMENT 2 -->
+                    <!-- TEXT CONTAINER COMMENT 2 -->
+                    <div class="textContainerComment">
+                        <!-- HEADING AUTHOR and DATE -->
+                        <h5>
+                            <time datetime="2019-12-10">Wednesday December 10th, 2019</time>
+                            by JP
+                        </h5><!-- END HEADING AUTHOR and DATE -->
+                        <!-- TEXT -->
+                        <p>Aenean iaculis condimentum tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex tortor. Praesent eu. </p>
+                    </div><!-- END TEXT CONTAINER COMMENT 2 -->
+                </article>
+
+                <!-- article for user input, display comments on page -->
+                <!--  
+                <article class="comment userComments">
+                    
+                    <div class="textContainerComment">
+                        <h5>name</h5>
+                        <p>comment</p>
+                    </div>
+                    
+                </article>-->
+
+            </div><!-- END DIV .COMMENTCONTAINER -->
+
             <!-- FORM -->
-            <form action="" method="POST" class="blogForm" >
+            <form action="" method="POST" class="blogForm" aria-label="form to post comment" >
                 <!-- FORM FIELD CONTAINER -->
                 <div class="field">
                     <label for="userName">Name</label>
-                    <input type="text" name="userName" id="userName" required maxlength="250">
+                    <input type="text" name="blogInput" id="userName" required maxlength="250">
                 </div><!-- END FORM FIELD CONTAINER -->
                 <!-- FORM FIELD CONTAINER -->
                 <div class="field">
                     <label for="userEmail">Email address</label>
-                    <input type="email" name="userEmail" id="userEmail" required>
+                    <input type="email" name="blogInput" id="userEmail" required>
                 </div><!-- END FORM FIELD CONTAINER -->
                 <div class="textAreaContainer">
                     <label for="comment">Comment</label>
-                    <textarea name="comment" id="comment" placeholder="Comment" required></textarea>
+                    <textarea name="blogInput" id="comment" placeholder="Comment" required></textarea>
                 </div>
-                <button class="button buttonOne">post comment</button>
+                <button class="button buttonOne" type="submit">post comment</button>
             </form>
         </section>
     </main>
@@ -214,5 +237,10 @@
 
     <!-- Font Awesome kit's code for icons -->
     <script src="https://kit.fontawesome.com/89c2b5bd0d.js" crossorigin="anonymous"></script>
+    
+    
+
+    <!-- link to javascript blog file -->
+    <script src="blogScript.js"></script>
 </body>
 </html>

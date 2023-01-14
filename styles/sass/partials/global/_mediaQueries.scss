@@ -379,14 +379,117 @@
 }
 
 @media (max-width: 1180px) {
-    //NAV BAR
-    //hide DESKTOP NAV
-    .headerNav {
+    // MOBILE/TABLET NAV
+    // HAMBURGER MENU visible
+    .hamburgerNav {
+        z-index: 10;
+        right: 0;
+        position: fixed;
+        top: 0;
+        left:0;
+        display: unset;
+        height: 70px; 
+    }
+
+    // FLEX LOGO & BURGER
+    .logoBurgerFlex {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .logo {
+            position: absolute;
+            top: 22px;
+        }
+    }
+
+    // make logo disappear when menu opened
+    .noLogo {
+        left: -100%;
+    }
+    
+    // HAMBURGER BUTTON
+    .hamburgerMenu {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        transition: all 400ms;
+        // &:not(:hover) {
+        //     color: variables.$black;
+        // }
+    }
+
+    // SLIDE OUT MENU
+    .slideOut {
+        top: 60px;
+        right: -100%;
+        position: absolute;
+        transition: all 400ms;
+        width: 100%;
+        // WRAPPER AS FLEX CONTAINER
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        // MENU ITEMS
+        a {
+            display: inline-block;
+            padding: 20px 0 20px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            &:hover,
+            &:focus {
+                color: variables.$turqoiseBlue;
+            }
+        }
+        li {
+            text-align: center;
+            margin: 0;
+            width: fit-content;
+            margin-bottom: 10px;
+            color: variables.$darkSlateBlue;
+        }
+    }
+    // MAIN NAV DESKTOP
+    .mainNav {
         display: none;
     }
-    .slideOutNav {
-        display: flex;
+
+    .navActive {
+        // important to still specify height when burger icon is clicked
+        height: 100%;
+        z-index: 10;
+        background-color: variables.$nav;
+        // .hamburgerMenu:not(:hover).hamburgerMenu:not(:focus) {
+        //     color: variables.$black;
+        // }
+        .slideOut {
+            right: 0;
+        }
+        
+
+        // rotate button for cool effect
+        .fa-bars {
+            transform: rotate(90deg);
+        }
+        .fa-times {
+            transform: rotate(-90deg);
+        }
     }
+
+    // ORIGINAL CODE MOBILE NAV
+    //NAV BAR
+    //hide DESKTOP NAV
+    // .headerNav {
+    //     display: none;
+    // }
+    // .slideOutNav {
+    //     display: flex;
+    // }
     //HOME PAGE
     //HEADER
     .headingContainerHome {
@@ -495,7 +598,7 @@
     }
     //ABOUT section
     .about {
-        padding-top: 185px;
+        padding-top: 135px;
         padding-bottom: 85px;
         .textContainerAbout {
                 width: 54%;
@@ -1134,7 +1237,7 @@
     //BLOG POST section
     .blogPost {
         .blogPostArticle {
-            padding-top: 180px;
+            padding-top: 260px;
             padding-bottom: 40px;
         }
     }
@@ -1285,12 +1388,6 @@
 }
 
 @media (max-width: 475px) {
-    // SLIDE OUT NAV
-    .slideOutNav {
-        label {
-            font-size: 1.3rem;
-        }
-    }
     //HOME PAGE
     //HEADER
     .headingContainerHome {
@@ -1329,6 +1426,13 @@
             height: 20px;
         }
     }
+    // OLD CODE FOR MOBILE NAV
+    // SLIDE OUT NAV
+    // .slideOutNav {
+    //     label {
+    //         font-size: 1.3rem;
+    //     }
+    // }
 }
 
 @media (max-width: 445px) {
@@ -1396,13 +1500,6 @@
 
 
 @media (max-width: 426px) {
-    //MOBILE NAV
-    .slideOutNav {
-        label {
-            font-size: 1.4rem;
-        }
-    }
-    
     //HOME PAGE
     //HEADER
     .headingContainerHome {
@@ -1455,9 +1552,6 @@
         h3 {
             font-size: 35px;
         }
-        .blogPostArticle {
-            padding-top: 140px;
-        }
     }
     //SIDE BAR
     aside {
@@ -1465,44 +1559,16 @@
             height: 0;
         }
     }
-    
-}
 
-@media (max-width: 408px) {
-    //SLIDE OUT NAV
-    .slideOutNav {
-        label {
-            font-size: 1.3rem;
-        }
-        label:after,
-        input:checked + label:after {
-            right: -35px;
-        }
-    }
-    .menuContent {
-        font-size: 18px;
-    }
+    //OLD CODE MOBILE NAV
+    // .slideOutNav {
+    //     label {
+    //         font-size: 1.4rem;
+    //     }
+    // }
 }
-
-/*
-@media (max-width: 397px) {
-    //SLIDE OUT NAV
-    .menuContent {
-        padding-left: 10px;
-    }
-}*/
 
 @media (max-width: 386px) {
-    //SLIDE OUT NAV
-    .slideOutNav {
-        label {
-            left: 50px;
-        }
-    }
-    /*
-    .menuContent {
-        padding-left: 10px;
-    }*/
     //HORIZONTAL SCROLL FIX FOR MOBILE
     .slideOutNav,
     .menuContent,
@@ -1521,12 +1587,6 @@
 }
 
 @media (max-width: 375px) {
-    //MOBILE NAV
-    
-    .menuContent {
-        //padding-left: 10px;
-        font-size: 16px;
-    }
     //HOME PAGE
     //HEADER
     header {
@@ -1541,7 +1601,7 @@
             font-size: 43px;
         }
         .blogPostArticle {
-            padding-top: 120px;
+            padding-top: 220px;
         }
     }
     //SIDE BAR
@@ -1556,22 +1616,15 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+
+    // OLD CODE MOBILE NAV
+    // .menuContent {
+    //     //padding-left: 10px;
+    //     font-size: 16px;
+    // }
 }
 
 @media (max-width: 352px) {
-    //MOBILE NAV
-    .slideOutNav {
-        label {
-            font-size: 1.2rem;
-        }
-        label:after,
-        input:checked + label:after {
-            right: -30px;
-        }
-    }
-    .menuContent {
-        font-size: 15px;
-    }
     //HOME PAGE
     //HEADER
     .headingContainerHome {
@@ -1638,35 +1691,33 @@
     }
     //BLOG PAGE
     //BLOG POST section
-    .blogPost {
-        .blogPostArticle {
-            padding-top: 100px;
-        }
-    }
+    // .blogPost {
+    //     .blogPostArticle {
+    //         padding-top: 100px;
+    //     }
+    // }
     //SIDE BAR
     aside {
         .textContainerAside {
             padding-top: 170px;
         }
     }
+    //OLD CODE MOBILE NAV
+    // .slideOutNav {
+    //     label {
+    //         font-size: 1.2rem;
+    //     }
+    //     label:after,
+    //     input:checked + label:after {
+    //         right: -30px;
+    //     }
+    // }
+    // .menuContent {
+    //     font-size: 15px;
+    // }
 }
 
 @media (max-width: 338px) {
-    //MOBILE NAV
-    .slideOutNav {
-        label {
-            font-size: 1rem;
-            left: 40px;
-        }
-        label:after,
-        input:checked + label:after {
-            right: -22.5px;
-        }
-    }
-    .menuContent {
-        //padding-left: 10px;
-        font-size: 15px;
-    }
     //HOME PAGE
     //HEADER
     .imgContainerHeaderAbout {
@@ -1679,4 +1730,20 @@
     aside {
         width: min-content;
     }
+
+    //OLD CODE MOBILE NAV
+    // .slideOutNav {
+    //     label {
+    //         font-size: 1rem;
+    //         left: 40px;
+    //     }
+    //     label:after,
+    //     input:checked + label:after {
+    //         right: -22.5px;
+    //     }
+    // }
+    // .menuContent {
+    //     //padding-left: 10px;
+    //     font-size: 15px;
+    // }
 }

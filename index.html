@@ -16,12 +16,12 @@
     <!-- SKIP LINK -->
     <a href="#mainContent" class="skipLink">Skip to main content</a>
 
-    <!-- HEADER -->
-    <header class="homeHeader">
+    <!-- MAIN NAV for DESKTOP -->
+    <nav class="mainNav">
         <!-- WRAPPER -->
         <div class="wrapper">
             <!-- FLEX CONTAINER for LOGO + HEADER NAV -->
-            <div class="headerFlex headerFlexHome">
+            <!-- <div class="headerFlex headerFlexHome"> -->
                 <!-- LOGO -->
                 <div class="logo">
                     <!-- logo links to homepage -->
@@ -29,56 +29,90 @@
                         <h1>Textilee</h1>
                     </a>
                 </div><!-- END LOGO -->
-                <!-- HEADER NAV for DESKTOP -->
-                <nav class="headerNav">
-                    <!-- UL as FLEX container for NAV -->
-                    <ul class="headerNavFlex">
-                        <!-- HOME -->
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <!-- ABOUT -->
-                        <li>
-                            <a href="./index.html#about">About</a>
-                        </li>
-                        <!-- BLOG -->
-                        <li>
-                            <a href="./blog.html">Blog</a>
-                        </li>
-                        <!-- CONTACT -->
-                        <li>
-                            <a href="./contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav><!-- END HEADER NAV DESKTOP -->
-                <!-- SLIDE OUT MENU for MOBILE and TABLET -->
-                <!-- used this blog post that Esther mentioned https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390 as a guide to attempt slide out nav without JS -->
-                <nav class="slideOutNav">
+                <!-- HEADER NAV UL for DESKTOP -->
+                <ul class="navLinks">
+                    <!-- HOME -->
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <!-- ABOUT -->
+                    <li>
+                        <a href="./index.html#about">About</a>
+                    </li>
+                    <!-- BLOG -->
+                    <li>
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                    <!-- CONTACT -->
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            <!-- </div>END HEADERFLEX for LOGO and NAV -->
+        </div><!-- END WRAPPER -->
+    </nav><!-- END MAIN NAV DESKTOP -->
+            
+    <!-- SLIDE OUT MENU for MOBILE and TABLET -->
+    <!-- HAMBURGER NAV -->
+    <nav class="hamburgerNav">
+        <!-- LOGO BURGER FLEX container -->
+        <div class="logoBurgerFlex wrapper">
+            <!-- LOGO -->
+            <a href="./index.html" class="logo">
+                <h1>Textilee</h1>
+            </a>
+            
+            <!-- HAMBURGER MENU for mobile & tablet --> 
+            <button class="hamburgerMenu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                <span class="sr-only">Mobile navigation button</span>
+            </button>
+        </div><!-- END LOGO BURGER FLEX + WRAPPER -->
+        </div>
+        <!-- SLIDE OUT NAV -->
+        <ul class="slideOut">
+            <!-- WRAPPER -->
+            <div class="wrapper">
+                <li><a href="./index.html" class="navLinkOne" aria-label="go to home page">Home</a></li>
+                <li><a href="./index.html#about" class="navLinkTwo" aria-label="go to about section">About</a></li>
+                <li><a href="./blog.html" class="navLinkThree" aria-label="go to blog page">Blog</a></li>
+                <li><a href="./contact.html" class="navLinkFour" aria-label="go to contact page">Contact</a></li>
+            </div><!-- END WRAPPER -->
+        </ul>
+    </nav>
+
+
+                <!-- originally used this blog post that Esther mentioned https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390 as a guide to attempt slide out nav without JS -->
+                <!-- <nav class="slideOutNav">
                     <input type="checkbox" id="menu">
                     <label for="menu" tabindex="0">Menu</label>
                     <!-- SLIDE OUT MENU CONTENT -->
-                    <div class="menuContent" >
-                        <ul>
+                    <!-- <div class="menuContent" >
+                        <ul> -->
                             <!-- HOME -->
-                            <li>
+                            <!-- <li>
                                 <a href="./index.html">Home</a>
-                            </li>
+                            </li> -->
                             <!-- ABOUT -->
-                            <li>
+                            <!-- <li>
                                 <a href="./index.html#about">About</a>
-                            </li>
+                            </li> -->
                             <!-- BLOG -->
-                            <li>
+                            <!-- <li>
                                 <a href="./blog.html">Blog</a>
-                            </li>
+                            </li> -->
                             <!-- CONTACT -->
-                            <li>
+                            <!-- <li>
                                 <a href="./contact.html">Contact</a>
-                            </li>
-                         </ul>
-                    </div><!--END MENU CONTENT -->
-                </nav><!-- END SLIDE OUT MENU -->
-            </div><!-- END HEADERFLEX for LOGO and NAV -->
+                            </li> -->
+                         <!-- </ul> --> 
+                    <!-- </div>END MENU CONTENT -->
+                <!-- </nav>END SLIDE OUT MENU -->
+            
+    <!-- HEADER -->
+    <header class="homeHeader">
+        <!-- WRAPPER -->
+        <div class="wrapper">
             <!-- HEADING CONTAINER -->
             <div class="headingContainerHome">
                 <h2>Textiles for all projects in mind</h2>
@@ -147,7 +181,7 @@
                     <li>
                         <!-- CALENDAR CHECK ICON as bulletpoint -->
                         <span class="fa-li">
-                            <a href="#"><i class="fa-solid fa-calendar-check"></i></a>
+                            <a href="#" aria-label="go to Upcoming Events"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></a>
                         </span>
                         <!-- TEXT CONTAINER LIST -->
                         <div class="textContainerList">
@@ -159,7 +193,7 @@
                     <li>
                         <!-- USERS ICON as BULLETPOINT -->
                         <span class="fa-li">
-                            <a href="#"><i class="fa-solid fa-users"></i></a>
+                            <a href="#" aria-label="check out the Community"><i class="fa-solid fa-users" aria-hidden="true"></i></a>
                         </span>
                         <!-- TEXT CONTAINER LIST -->
                         <div class="textContainerList">
@@ -171,7 +205,7 @@
                     <li>
                         <!-- FILE ICON as BULLETPOINT -->
                         <span class="fa-li">
-                            <a href="./blog.html"><i class="fa-solid fa-file"></i></a>
+                            <a href="./blog.html" aria-label="go to blog page"><i class="fa-solid fa-file" aria-hidden="true"></i></a>
                         </span>
                         <!-- TEXT CONTAINER LIST -->
                         <div class="textContainerList">
@@ -183,7 +217,7 @@
                     <li>
                         <!-- PHONE FLIP ICON as BULLETPOINT -->
                         <span class="fa-li">
-                            <a href="./contact.html"><i class="fa-solid fa-phone-flip"></i></a>
+                            <a href="./contact.html" aria-label="go to contact page"><i class="fa-solid fa-phone-flip" aria-hidden="true"></i></a>
                         </span>
                         <!-- TEXT CONTAINER LIST -->
                         <div class="textContainerList">
@@ -248,5 +282,8 @@
 
     <!-- Font Awesome kit's code for icons -->
     <script src="https://kit.fontawesome.com/89c2b5bd0d.js" crossorigin="anonymous"></script>
+
+    <!-- link to javascript file -->
+    <script src="script.js"></script>
 </body>
 </html>
